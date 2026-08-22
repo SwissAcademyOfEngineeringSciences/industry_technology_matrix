@@ -363,7 +363,7 @@
       "col": "Energie & Umwelt",
       "row": "Metallverarbeitung",
       "value": 0,
-      "techIDs": [""]
+      "techIDs": []
     },
     {
       "col": "Energie & Umwelt",
@@ -485,7 +485,7 @@
       "col": "Life Sciences",
       "row": "Druck, Holz & Papier",
       "value": 0,
-      "techIDs": [""]
+      "techIDs": []
     },
     {
       "col": "Life Sciences",
@@ -503,7 +503,7 @@
       "col": "Life Sciences",
       "row": "Metallverarbeitung",
       "value": 0,
-      "techIDs": [""]
+      "techIDs": []
     },
     {
       "col": "Life Sciences",
@@ -522,7 +522,7 @@
       "col": "Life Sciences",
       "row": "sonstige Industrien",
       "value": 0,
-      "techIDs": [""]
+      "techIDs": []
     }
   ]
 }
