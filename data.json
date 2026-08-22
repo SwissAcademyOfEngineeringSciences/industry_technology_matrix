@@ -1,484 +1,528 @@
 {
-    "technologies": {
-        "2DMat": {
-            "id": "2DMAT",
-            "label_DE": "2D-Materialien",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/2d-materialien"
-        },
-        "BaktPhag": {
-            "id": "BaktPhag",
-            "label_DE": "Bakteriophagen",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/bakteriophagen"
-        },
-        "BioInsp": {
-            "id": "BioInsp",
-            "label_DE": "Bioinspiration und Biointegration",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/bioinspiration-und-biointegration-1"
-        },
-        "BioKat": {
-            "id": "BioKat",
-            "label_DE": "Biokatalyse",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/biokatalyse"
-        },
-        "BioPlast": {
-            "id": "BioPlast",
-            "label_DE": "Bioplastik aus Abfall",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/bioplastik-aus-abfall"
-        },
-        "CO2Kunst": {
-            "id": "CO2Kunst",
-            "label_DE": "CO2-basierte Kunststoffe",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/co2-basierte-kunststoffe"
-        },
-        "CO2Beton": {
-            "id": "CO2Beton",
-            "label_DE": "CO2-reduzierter Beton",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/co2-reduzierter-beton"
-        },
-        "DiamantPhoto": {
-            "id": "DiamantPhoto",
-            "label_DE": "Diamantbasierte Photonik",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/diamantbasierte-photonik"
-        },
-        "FaserSens": {
-            "id": "FaserSens",
-            "label_DE": "Faseroptische Sensoren",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/faseroptische-sensoren-1"
-        },
-        "FlexBat": {
-            "id": "FlexBat",
-            "label_DE": "Flexible Baterien",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/flexible-batterien"
-        },
-        "HumAug": {
-            "id": "HumAug",
-            "label_DE": "Human Augmentation",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/human-augmentation"
-        },
-        "Ind50": {
-            "id": "Ind50",
-            "label_DE": "Industrie 5.0",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/industrie-50"
-        },
-        "IOT": {
-            "id": "IOT",
-            "label_DE": "Internet of Things",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/internet-of-things"
-        },
-        "KunstPhoto": {
-            "id": "KunstPhoto",
-            "label_DE": "Künstliche Photosynthese",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/kuenstliche-photosynthese-1"
-        },
-        "KunstRecycl": {
-            "id": "KunstRecycl",
-            "label_DE": "Kunststoffrecycling",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/kunststoffrecycling"
-        },
-        "mRNA": {
-            "id": "mRNA",
-            "label_DE": "mRNA",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/mrna"
-        },
-        "NachKleb": {
-            "id": "NachKleb",
-            "label_DE": "Nachhaltige Kleb- und Dichtstoffe",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/nachhaltige-kleb-und-dichtstoffe-1"
-        },
-        "NegEmiss": {
-            "id": "NegEmiss",
-            "label_DE": "Negativemissionstechnologien",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/negativemissionstechnologien"
-        },
-        "Perowskit": {
-            "id": "Perowskit",
-            "label_DE": "Perowskit",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/perowskit"
-        },
-        "PersErn": {
-            "id": "PersErn",
-            "label_DE": "Personalisierte Ernährung",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/personalisierte-ernaehrung-1"
-        },
-        "PhosRecycl": {
-            "id": "PhosRecycl",
-            "label_DE": "Phosphorrecycling",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/phosphorrecycling"
-        },
-        "PICS": {
-            "id": "PICS",
-            "label_DE": "Photonisch integrierte Schaltkreise (PICs)",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/pics-1"
-        },
-        "PlasTech": {
-            "id": "PlasTech",
-            "label_DE": "Plasmatechnologien",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/plasmatechnologien"
-        },
-        "QuantComp": {
-            "id": "QuantComp",
-            "label_DE": "Quantencomputer",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/quantencomputer"
-        },
-        "Synfuels": {
-            "id": "Synfuels",
-            "label_DE": "Synfuels",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/synfuels"
-        },
-        "SynthBio": {
-            "id": "SynthBio",
-            "label_DE": "Synthetische Biologie",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/synthetische-biologie-1"
-        },
-        "TiefGeo": {
-            "id": "TiefGeo",
-            "label_DE": "Tiefengeometrie",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/tiefengeothermie"
-        },
-        "TIMS": {
-            "id": "TIMS",
-            "label_DE": "Wärmeleitende elektrische Isolatoren (TIMs)",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/tims"
-        },
-        "URLCC": {
-            "id": "URLCC",
-            "label_DE": "Ultrazuverlässige Echtzeitkommunikation",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/urllc"
-        },
-        "Wasserstoff": {
-            "id": "Wasserstoff",
-            "label_DE": "Wasserstoff",
-            "description_DE": "blablabla",
-            "url_DE": "https://technology-outlook.satw.ch/de/technologien/wasserstoff"
-        }
+  "technologies": {
+    "2DMat": {
+      "id": "2DMAT",
+      "label_DE": "2D-Materialien",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/2d-materialien"
     },
-    "cols": [
-        "Digitale Welt",
-        "Energie & Umwelt",
-        "Fertigungsprozesse & Materialien",
-        "Life Sciences"
-    ],
-    "rows": [
-        "Chemie",
-        "Pharma",
-        "Elektronik & Instrumente",
-        "Elektrotechnik",
-        "Fahrzeug- & Maschinenbau",
-        "Druck, Holz & Papier",
-        "Enerige, Wasser & Umwelt",
-        "Kunststoffe",
-        "Metallverarbeitung",
-        "Nahrungsmittel",
-        "sonstige Industrien"
-    ],
-    "cells": [
-        {
-            "col": "Digitale Welt",
-            "row": "Chemie",
-            "value": 2,
-            "techIDs": [
-                "IOT",
-                "URLCC"
-            ]
-        },
-        {
-            "col": "Digitale Welt",
-            "row": "Pharma",
-            "value": 2,
-            "techIDs": [
-                "IOT",
-                "URLCC"
-            ]
-        },
-        {
-            "col": "Digitale Welt",
-            "row": "Elektronik & Instrumente",
-            "value": 4,
-            "techIDs": ["Ind50","IOT", "PICS", "URLCC"]
-        },
-                {
-            "col": "Digitale Welt",
-            "row": "Elektrotechnik",
-            "value": 3,
-            "techIDs": ["Ind50","IOT", "PICS"]
-        },
-                {
-            "col": "Digitale Welt",
-            "row": "Fahrzeug- & Maschinenbau",
-            "value": 2,
-            "techIDs": ["Ind50","IOT"]
-        },
-                {
-            "col": "Digitale Welt",
-            "row": "Druck, Holz & Papier",
-            "value": 1,
-            "techIDs": ["IOT"]
-        },
-                {
-            "col": "Digitale Welt",
-            "row": "Enerige, Wasser & Umwelt",
-            "value": 3,
-            "techIDs": ["Ind50","IOT"]
-        },
-                {
-            "col": "Digitale Welt",
-            "row": "Kunststoffe",
-            "value": 2,
-            "techIDs": ["Ind50","IOT"]
-        },
-                {
-            "col": "Digitale Welt",
-            "row": "Metallverarbeitung",
-            "value": 2,
-            "techIDs": ["Ind50","IOT"]
-        },
-                {
-            "col": "Digitale Welt",
-            "row": "Nahrungsmittel",
-            "value": 2,
-            "techIDs": ["Ind50","IOT"]
-        },
-                {
-            "col": "Digitale Welt",
-            "row": "sonstige Industrien",
-            "value": 2,
-            "techIDs": ["Ind50","IOT"]
-        },
-        {
-            "col": "Energie & Umwelt",
-            "row": "Chemie",
-            "value": 5,
-            "techIDs": [
-                "KunstPhoto",
-                "KunstRecycl",
-                "NegEmiss",
-                "Synfuels",
-                "Wasserstoff"
-            ]
-        },
-        {
-            "col": "Energie & Umwelt",
-            "row": "Pharma",
-            "value": 2,
-            "techIDs": [
-                "KunstRecycl",
-                "NegEmiss"
-            ]
-        },
-        {
-            "col": "Energie & Umwelt",
-            "row": "Elektronik & Instrumente",
-            "value": 0,
-            "techIDs": ["",""]
-        },
-                {
-            "col": "Energie & Umwelt",
-            "row": "Elektrotechnik",
-            "value": 0,
-            "techIDs": ["",""]
-        },
-                {
-            "col": "Energie & Umwelt",
-            "row": "Fahrzeug- & Maschinenbau",
-            "value": 1,
-            "techIDs": ["Wasserstoff"]
-        },
-                {
-            "col": "Energie & Umwelt",
-            "row": "Druck, Holz & Papier",
-            "value": 1,
-            "techIDs": ["KunstRecycl"]
-        },
-                {
-            "col": "Energie & Umwelt",
-            "row": "Enerige, Wasser & Umwelt",
-            "value": 7,
-            "techIDs": ["KunstPhoto","KunstRecycl", "NegEmiss", "PhosRecycl", "Synfuels", "TiefGeo", "Wasserstoff"]
-        },
-                {
-            "col": "Energie & Umwelt",
-            "row": "Kunststoffe",
-            "value": 1,
-            "techIDs": ["KunstRecycl"]
-        },
-                {
-            "col": "Energie & Umwelt",
-            "row": "Metallverarbeitung",
-            "value": 0,
-            "techIDs": [""]
-        },
-                {
-            "col": "Energie & Umwelt",
-            "row": "Nahrungsmittel",
-            "value": 3,
-            "techIDs": ["KunstRecycl","NegEmiss", "PhosRecycl"]
-        },
-                {
-            "col": "Energie & Umwelt",
-            "row": "sonstige Industrien",
-            "value": 2,
-            "techIDs": ["KunstRecycl","NegEmiss"]
-        },
-        {
-            "col": "Fertigungsprozesse & Materialien",
-            "row": "Chemie",
-            "value": 7,
-            "techIDs": ["BioPlast","CO2Beton", "FaserSens", "NachKleb", "Perowskit", "PlasTech", "TIMS"]
-        },
-        {
-            "col": "Fertigungsprozesse & Materialien",
-            "row": "Pharma",
-            "value": 2,
-            "techIDs": ["FaserSens","FlexBat"]
-        },
-        {
-            "col": "Fertigungsprozesse & Materialien",
-            "row": "Elektronik & Instrumente",
-            "value": 4,
-            "techIDs": ["2DMat","FaserSens", "FlexBat","Perowskit"]
-        },
-                {
-            "col": "Fertigungsprozesse & Materialien",
-            "row": "Elektrotechnik",
-            "value": 4,
-            "techIDs": ["2DMat","FaserSens", "FlexBat","Perowskit"]
-        },
-                {
-            "col": "Fertigungsprozesse & Materialien",
-            "row": "Fahrzeug- & Maschinenbau",
-            "value": 3,
-            "techIDs": ["FaserSens","NachKleb", "TIMS"]
-        },
-                {
-            "col": "Fertigungsprozesse & Materialien",
-            "row": "Druck, Holz & Papier",
-            "value": 4,
-            "techIDs": ["CO2Kunst","FaserSens", "FlexBat", "NachKleb"]
-        },
-                {
-            "col": "Fertigungsprozesse & Materialien",
-            "row": "Enerige, Wasser & Umwelt",
-            "value": 5,
-            "techIDs": ["BioPlast","CO2Beton", "CO2Kunst", "FaserSens", "Perowskit"]
-        },
-                {
-            "col": "Fertigungsprozesse & Materialien",
-            "row": "Kunststoffe",
-            "value": 3,
-            "techIDs": ["BioPlast","FaserSens", "NachKleb"]
-        },
-                {
-            "col": "Fertigungsprozesse & Materialien",
-            "row": "Metallverarbeitung",
-            "value": 1,
-            "techIDs": ["FaserSens"]
-        },
-                {
-            "col": "Fertigungsprozesse & Materialien",
-            "row": "Nahrungsmittel",
-            "value": 1,
-            "techIDs": ["FaserSens"]
-        },
-                {
-            "col": "Fertigungsprozesse & Materialien",
-            "row": "sonstige Industrien",
-            "value": 1,
-            "techIDs": ["FaserSens"]
-        },
-        {
-            "col": "Life Sciences",
-            "row": "Chemie",
-            "value": 5,
-            "techIDs": ["BioInsp","BioKat", "HumAug", "mRNA", "SynthBio"]
-        },
-        {
-            "col": "Life Sciences",
-            "row": "Pharma",
-            "value": 6,
-            "techIDs": ["BaktPhag","BioInsp", "BioKat", "HumAug", "mRNA", "SynthBio"]
-        },
-        {
-            "col": "Life Sciences",
-            "row": "Elektronik & Instrumente",
-            "value": 2,
-            "techIDs": ["BioInsp","HumAug"]
-        },
-                {
-            "col": "Life Sciences",
-            "row": "Elektrotechnik",
-            "value": 2,
-            "techIDs": ["BioInsp","HumAug"]
-        },
-                {
-            "col": "Life Sciences",
-            "row": "Fahrzeug- & Maschinenbau",
-            "value": 2,
-            "techIDs": ["BioInsp","HumAug"]
-        },
-                {
-            "col": "Life Sciences",
-            "row": "Druck, Holz & Papier",
-            "value": 0,
-            "techIDs": [""]
-        },
-                {
-            "col": "Life Sciences",
-            "row": "Enerige, Wasser & Umwelt",
-            "value": 3,
-            "techIDs": ["BaktPhag","BioInsp", "BioKat"]
-        },
-                {
-            "col": "Life Sciences",
-            "row": "Kunststoffe",
-            "value": 3,
-            "techIDs": ["BaktPhag","BioInsp", "BioKat"]
-        },
-                {
-            "col": "Life Sciences",
-            "row": "Metallverarbeitung",
-            "value": 0,
-            "techIDs": [""]
-        },
-                {
-            "col": "Life Sciences",
-            "row": "Nahrungsmittel",
-            "value": 6,
-            "techIDs": ["BaktPhag", "BioInsp", "BioKat", "mRNA", "PersErn", "SynthBio"]
-        },
-                {
-            "col": "Life Sciences",
-            "row": "sonstige Industrien",
-            "value": 0,
-            "techIDs": [""]
-        }
-    ]
+    "BaktPhag": {
+      "id": "BaktPhag",
+      "label_DE": "Bakteriophagen",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/bakteriophagen"
+    },
+    "BioInsp": {
+      "id": "BioInsp",
+      "label_DE": "Bioinspiration und Biointegration",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/bioinspiration-und-biointegration-1"
+    },
+    "BioKat": {
+      "id": "BioKat",
+      "label_DE": "Biokatalyse",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/biokatalyse"
+    },
+    "BioPlast": {
+      "id": "BioPlast",
+      "label_DE": "Bioplastik aus Abfall",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/bioplastik-aus-abfall"
+    },
+    "CO2Kunst": {
+      "id": "CO2Kunst",
+      "label_DE": "CO2-basierte Kunststoffe",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/co2-basierte-kunststoffe"
+    },
+    "CO2Beton": {
+      "id": "CO2Beton",
+      "label_DE": "CO2-reduzierter Beton",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/co2-reduzierter-beton"
+    },
+    "DiamantPhoto": {
+      "id": "DiamantPhoto",
+      "label_DE": "Diamantbasierte Photonik",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/diamantbasierte-photonik"
+    },
+    "FaserSens": {
+      "id": "FaserSens",
+      "label_DE": "Faseroptische Sensoren",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/faseroptische-sensoren-1"
+    },
+    "FlexBat": {
+      "id": "FlexBat",
+      "label_DE": "Flexible Baterien",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/flexible-batterien"
+    },
+    "HumAug": {
+      "id": "HumAug",
+      "label_DE": "Human Augmentation",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/human-augmentation"
+    },
+    "Ind50": {
+      "id": "Ind50",
+      "label_DE": "Industrie 5.0",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/industrie-50"
+    },
+    "IOT": {
+      "id": "IOT",
+      "label_DE": "Internet of Things",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/internet-of-things"
+    },
+    "KunstPhoto": {
+      "id": "KunstPhoto",
+      "label_DE": "Künstliche Photosynthese",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/kuenstliche-photosynthese-1"
+    },
+    "KunstRecycl": {
+      "id": "KunstRecycl",
+      "label_DE": "Kunststoffrecycling",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/kunststoffrecycling"
+    },
+    "mRNA": {
+      "id": "mRNA",
+      "label_DE": "mRNA",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/mrna"
+    },
+    "NachKleb": {
+      "id": "NachKleb",
+      "label_DE": "Nachhaltige Kleb- und Dichtstoffe",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/nachhaltige-kleb-und-dichtstoffe-1"
+    },
+    "NegEmiss": {
+      "id": "NegEmiss",
+      "label_DE": "Negativemissionstechnologien",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/negativemissionstechnologien"
+    },
+    "Perowskit": {
+      "id": "Perowskit",
+      "label_DE": "Perowskit",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/perowskit"
+    },
+    "PersErn": {
+      "id": "PersErn",
+      "label_DE": "Personalisierte Ernährung",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/personalisierte-ernaehrung-1"
+    },
+    "PhosRecycl": {
+      "id": "PhosRecycl",
+      "label_DE": "Phosphorrecycling",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/phosphorrecycling"
+    },
+    "PICS": {
+      "id": "PICS",
+      "label_DE": "Photonisch integrierte Schaltkreise (PICs)",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/pics-1"
+    },
+    "PlasTech": {
+      "id": "PlasTech",
+      "label_DE": "Plasmatechnologien",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/plasmatechnologien"
+    },
+    "QuantComp": {
+      "id": "QuantComp",
+      "label_DE": "Quantencomputer",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/quantencomputer"
+    },
+    "Synfuels": {
+      "id": "Synfuels",
+      "label_DE": "Synfuels",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/synfuels"
+    },
+    "SynthBio": {
+      "id": "SynthBio",
+      "label_DE": "Synthetische Biologie",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/synthetische-biologie-1"
+    },
+    "TiefGeo": {
+      "id": "TiefGeo",
+      "label_DE": "Tiefengeometrie",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/tiefengeothermie"
+    },
+    "TIMS": {
+      "id": "TIMS",
+      "label_DE": "Wärmeleitende elektrische Isolatoren (TIMs)",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/tims"
+    },
+    "URLCC": {
+      "id": "URLCC",
+      "label_DE": "Ultrazuverlässige Echtzeitkommunikation",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/urllc"
+    },
+    "Wasserstoff": {
+      "id": "Wasserstoff",
+      "label_DE": "Wasserstoff",
+      "label_FR": "",
+      "label_EN": "",
+      "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/wasserstoff"
+    }
+  },
+  "cols": [
+    "Digitale Welt",
+    "Energie & Umwelt",
+    "Fertigungsprozesse & Materialien",
+    "Life Sciences"
+  ],
+  "rows": [
+    "Chemie",
+    "Pharma",
+    "Elektronik & Instrumente",
+    "Elektrotechnik",
+    "Fahrzeug- & Maschinenbau",
+    "Druck, Holz & Papier",
+    "Enerige, Wasser & Umwelt",
+    "Kunststoffe",
+    "Metallverarbeitung",
+    "Nahrungsmittel",
+    "sonstige Industrien"
+  ],
+  "cells": [
+    {
+      "col": "Digitale Welt",
+      "row": "Chemie",
+      "value": 2,
+      "techIDs": ["IOT", "URLCC"]
+    },
+    {
+      "col": "Digitale Welt",
+      "row": "Pharma",
+      "value": 2,
+      "techIDs": ["IOT", "URLCC"]
+    },
+    {
+      "col": "Digitale Welt",
+      "row": "Elektronik & Instrumente",
+      "value": 4,
+      "techIDs": ["Ind50", "IOT", "PICS", "URLCC"]
+    },
+    {
+      "col": "Digitale Welt",
+      "row": "Elektrotechnik",
+      "value": 3,
+      "techIDs": ["Ind50", "IOT", "PICS"]
+    },
+    {
+      "col": "Digitale Welt",
+      "row": "Fahrzeug- & Maschinenbau",
+      "value": 2,
+      "techIDs": ["Ind50", "IOT"]
+    },
+    {
+      "col": "Digitale Welt",
+      "row": "Druck, Holz & Papier",
+      "value": 1,
+      "techIDs": ["IOT"]
+    },
+    {
+      "col": "Digitale Welt",
+      "row": "Enerige, Wasser & Umwelt",
+      "value": 3,
+      "techIDs": ["Ind50", "IOT"]
+    },
+    {
+      "col": "Digitale Welt",
+      "row": "Kunststoffe",
+      "value": 2,
+      "techIDs": ["Ind50", "IOT"]
+    },
+    {
+      "col": "Digitale Welt",
+      "row": "Metallverarbeitung",
+      "value": 2,
+      "techIDs": ["Ind50", "IOT"]
+    },
+    {
+      "col": "Digitale Welt",
+      "row": "Nahrungsmittel",
+      "value": 2,
+      "techIDs": ["Ind50", "IOT"]
+    },
+    {
+      "col": "Digitale Welt",
+      "row": "sonstige Industrien",
+      "value": 2,
+      "techIDs": ["Ind50", "IOT"]
+    },
+    {
+      "col": "Energie & Umwelt",
+      "row": "Chemie",
+      "value": 5,
+      "techIDs": [
+        "KunstPhoto",
+        "KunstRecycl",
+        "NegEmiss",
+        "Synfuels",
+        "Wasserstoff"
+      ]
+    },
+    {
+      "col": "Energie & Umwelt",
+      "row": "Pharma",
+      "value": 2,
+      "techIDs": ["KunstRecycl", "NegEmiss"]
+    },
+    {
+      "col": "Energie & Umwelt",
+      "row": "Elektronik & Instrumente",
+      "value": 0,
+      "techIDs": ["", ""]
+    },
+    {
+      "col": "Energie & Umwelt",
+      "row": "Elektrotechnik",
+      "value": 0,
+      "techIDs": ["", ""]
+    },
+    {
+      "col": "Energie & Umwelt",
+      "row": "Fahrzeug- & Maschinenbau",
+      "value": 1,
+      "techIDs": ["Wasserstoff"]
+    },
+    {
+      "col": "Energie & Umwelt",
+      "row": "Druck, Holz & Papier",
+      "value": 1,
+      "techIDs": ["KunstRecycl"]
+    },
+    {
+      "col": "Energie & Umwelt",
+      "row": "Enerige, Wasser & Umwelt",
+      "value": 7,
+      "techIDs": [
+        "KunstPhoto",
+        "KunstRecycl",
+        "NegEmiss",
+        "PhosRecycl",
+        "Synfuels",
+        "TiefGeo",
+        "Wasserstoff"
+      ]
+    },
+    {
+      "col": "Energie & Umwelt",
+      "row": "Kunststoffe",
+      "value": 1,
+      "techIDs": ["KunstRecycl"]
+    },
+    {
+      "col": "Energie & Umwelt",
+      "row": "Metallverarbeitung",
+      "value": 0,
+      "techIDs": [""]
+    },
+    {
+      "col": "Energie & Umwelt",
+      "row": "Nahrungsmittel",
+      "value": 3,
+      "techIDs": ["KunstRecycl", "NegEmiss", "PhosRecycl"]
+    },
+    {
+      "col": "Energie & Umwelt",
+      "row": "sonstige Industrien",
+      "value": 2,
+      "techIDs": ["KunstRecycl", "NegEmiss"]
+    },
+    {
+      "col": "Fertigungsprozesse & Materialien",
+      "row": "Chemie",
+      "value": 7,
+      "techIDs": [
+        "BioPlast",
+        "CO2Beton",
+        "FaserSens",
+        "NachKleb",
+        "Perowskit",
+        "PlasTech",
+        "TIMS"
+      ]
+    },
+    {
+      "col": "Fertigungsprozesse & Materialien",
+      "row": "Pharma",
+      "value": 2,
+      "techIDs": ["FaserSens", "FlexBat"]
+    },
+    {
+      "col": "Fertigungsprozesse & Materialien",
+      "row": "Elektronik & Instrumente",
+      "value": 4,
+      "techIDs": ["2DMat", "FaserSens", "FlexBat", "Perowskit"]
+    },
+    {
+      "col": "Fertigungsprozesse & Materialien",
+      "row": "Elektrotechnik",
+      "value": 4,
+      "techIDs": ["2DMat", "FaserSens", "FlexBat", "Perowskit"]
+    },
+    {
+      "col": "Fertigungsprozesse & Materialien",
+      "row": "Fahrzeug- & Maschinenbau",
+      "value": 3,
+      "techIDs": ["FaserSens", "NachKleb", "TIMS"]
+    },
+    {
+      "col": "Fertigungsprozesse & Materialien",
+      "row": "Druck, Holz & Papier",
+      "value": 4,
+      "techIDs": ["CO2Kunst", "FaserSens", "FlexBat", "NachKleb"]
+    },
+    {
+      "col": "Fertigungsprozesse & Materialien",
+      "row": "Enerige, Wasser & Umwelt",
+      "value": 5,
+      "techIDs": ["BioPlast", "CO2Beton", "CO2Kunst", "FaserSens", "Perowskit"]
+    },
+    {
+      "col": "Fertigungsprozesse & Materialien",
+      "row": "Kunststoffe",
+      "value": 3,
+      "techIDs": ["BioPlast", "FaserSens", "NachKleb"]
+    },
+    {
+      "col": "Fertigungsprozesse & Materialien",
+      "row": "Metallverarbeitung",
+      "value": 1,
+      "techIDs": ["FaserSens"]
+    },
+    {
+      "col": "Fertigungsprozesse & Materialien",
+      "row": "Nahrungsmittel",
+      "value": 1,
+      "techIDs": ["FaserSens"]
+    },
+    {
+      "col": "Fertigungsprozesse & Materialien",
+      "row": "sonstige Industrien",
+      "value": 1,
+      "techIDs": ["FaserSens"]
+    },
+    {
+      "col": "Life Sciences",
+      "row": "Chemie",
+      "value": 5,
+      "techIDs": ["BioInsp", "BioKat", "HumAug", "mRNA", "SynthBio"]
+    },
+    {
+      "col": "Life Sciences",
+      "row": "Pharma",
+      "value": 6,
+      "techIDs": ["BaktPhag", "BioInsp", "BioKat", "HumAug", "mRNA", "SynthBio"]
+    },
+    {
+      "col": "Life Sciences",
+      "row": "Elektronik & Instrumente",
+      "value": 2,
+      "techIDs": ["BioInsp", "HumAug"]
+    },
+    {
+      "col": "Life Sciences",
+      "row": "Elektrotechnik",
+      "value": 2,
+      "techIDs": ["BioInsp", "HumAug"]
+    },
+    {
+      "col": "Life Sciences",
+      "row": "Fahrzeug- & Maschinenbau",
+      "value": 2,
+      "techIDs": ["BioInsp", "HumAug"]
+    },
+    {
+      "col": "Life Sciences",
+      "row": "Druck, Holz & Papier",
+      "value": 0,
+      "techIDs": [""]
+    },
+    {
+      "col": "Life Sciences",
+      "row": "Enerige, Wasser & Umwelt",
+      "value": 3,
+      "techIDs": ["BaktPhag", "BioInsp", "BioKat"]
+    },
+    {
+      "col": "Life Sciences",
+      "row": "Kunststoffe",
+      "value": 3,
+      "techIDs": ["BaktPhag", "BioInsp", "BioKat"]
+    },
+    {
+      "col": "Life Sciences",
+      "row": "Metallverarbeitung",
+      "value": 0,
+      "techIDs": [""]
+    },
+    {
+      "col": "Life Sciences",
+      "row": "Nahrungsmittel",
+      "value": 6,
+      "techIDs": [
+        "BaktPhag",
+        "BioInsp",
+        "BioKat",
+        "mRNA",
+        "PersErn",
+        "SynthBio"
+      ]
+    },
+    {
+      "col": "Life Sciences",
+      "row": "sonstige Industrien",
+      "value": 0,
+      "techIDs": [""]
+    }
+  ]
 }
