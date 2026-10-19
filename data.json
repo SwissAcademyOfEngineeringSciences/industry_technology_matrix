@@ -47,18 +47,18 @@
     },
     "CO2Kunst": {
       "id": "CO2Kunst",
-      "label_DE": "CO2-basierte Kunststoffe",
-      "label_FR": "Plastiques à base de CO2",
-      "label_EN": "CO2-based plastics",
+      "label_DE": "CO₂-basierte Kunststoffe",
+      "label_FR": "Plastiques à base de CO₂",
+      "label_EN": "CO₂-based plastics",
       "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/plastiques-a-base-de-co2",
       "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/co2-based-plastics",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/co2-basierte-kunststoffe"
     },
     "CO2Beton": {
       "id": "CO2Beton",
-      "label_DE": "CO2-reduzierter Beton",
+      "label_DE": "CO₂-reduzierter Beton",
       "label_FR": "Béton bas carbone",
-      "label_EN": "CO2-reduced concrete",
+      "label_EN": "CO₂-reduced concrete",
       "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/beton-bas-carbone-1",
       "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/co2-reduced-concrete",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/co2-reduzierter-beton"
