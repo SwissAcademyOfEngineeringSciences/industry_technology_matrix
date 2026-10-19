@@ -3,211 +3,271 @@
     "2DMat": {
       "id": "2DMAT",
       "label_DE": "2D-Materialien",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Matériaux 2D",
+      "label_EN": "2D materials",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/materiaux2d",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/2d-materials",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/2d-materialien"
     },
     "BaktPhag": {
       "id": "BaktPhag",
       "label_DE": "Bakteriophagen",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Bactériophages",
+      "label_EN": "Bacteriophages",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/bacteriophages",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/bacteriophages",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/bakteriophagen"
     },
     "BioInsp": {
       "id": "BioInsp",
       "label_DE": "Bioinspiration und Biointegration",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Bioinspiration et biointégration",
+      "label_EN": "Bioinspiration and biointegration",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/bioinspiration-et-biointegration",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/bioinspiration-and-biointegration-1",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/bioinspiration-und-biointegration-1"
     },
     "BioKat": {
       "id": "BioKat",
       "label_DE": "Biokatalyse",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Biocatalyse",
+      "label_EN": "Biocatalysis",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/biocatalyse",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/biocatalysis",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/biokatalyse"
     },
     "BioPlast": {
       "id": "BioPlast",
       "label_DE": "Bioplastik aus Abfall",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Bioplastique issu de déchets",
+      "label_EN": "Bioplastics from waste",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/bioplastique-issu-de-dechets",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/bioplastics-from-waste",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/bioplastik-aus-abfall"
     },
     "CO2Kunst": {
       "id": "CO2Kunst",
       "label_DE": "CO2-basierte Kunststoffe",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Plastiques à base de CO2",
+      "label_EN": "CO2-based plastics",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/plastiques-a-base-de-co2",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/co2-based-plastics",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/co2-basierte-kunststoffe"
     },
     "CO2Beton": {
       "id": "CO2Beton",
       "label_DE": "CO2-reduzierter Beton",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Béton bas carbone",
+      "label_EN": "CO2-reduced concrete",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/beton-bas-carbone-1",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/co2-reduced-concrete",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/co2-reduzierter-beton"
     },
     "DiamantPhoto": {
       "id": "DiamantPhoto",
       "label_DE": "Diamantbasierte Photonik",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Photonique à base de diamant",
+      "label_EN": "Diamond-based photonics",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/photonique-a-base-de-diamant",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/diamond-based-photonics",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/diamantbasierte-photonik"
     },
     "FaserSens": {
       "id": "FaserSens",
       "label_DE": "Faseroptische Sensoren",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Capteurs à fibres optiques",
+      "label_EN": "Fibre-optic sensors",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/capteurs-a-fibres-optiques",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/fibre-optic-sensors",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/faseroptische-sensoren-1"
     },
     "FlexBat": {
       "id": "FlexBat",
       "label_DE": "Flexible Baterien",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Batteries flexibles",
+      "label_EN": "Flexible batteries",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/batteries-flexibles",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/flexible-batteries",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/flexible-batterien"
     },
     "HumAug": {
       "id": "HumAug",
       "label_DE": "Human Augmentation",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Être humain augmenté",
+      "label_EN": "Human Augmentation",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/etre-humain-augmente",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/human-augmentation",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/human-augmentation"
     },
     "Ind50": {
       "id": "Ind50",
       "label_DE": "Industrie 5.0",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Industrie 5.0",
+      "label_EN": "Industry 5.0",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/industrie50",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/industry-50",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/industrie-50"
     },
     "IOT": {
       "id": "IOT",
       "label_DE": "Internet of Things",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Internet des objets",
+      "label_EN": "Internet of Things",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/internet-des-objets",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/internet-of-things",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/internet-of-things"
     },
     "KunstPhoto": {
       "id": "KunstPhoto",
       "label_DE": "Künstliche Photosynthese",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Photosynthèse artificielle",
+      "label_EN": "Artificial photosynthesis",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/photosynthese-artificielle-1",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/artificial-photosynthesis-1",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/kuenstliche-photosynthese-1"
     },
     "KunstRecycl": {
       "id": "KunstRecycl",
       "label_DE": "Kunststoffrecycling",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Recyclage du plastique",
+      "label_EN": "Plastics recycling",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/recyclage-du-plastique",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/plastics-recycling",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/kunststoffrecycling"
     },
     "mRNA": {
       "id": "mRNA",
       "label_DE": "mRNA",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "ARN messager",
+      "label_EN": "mRNA",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/arn-messager",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/mrna",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/mrna"
     },
     "NachKleb": {
       "id": "NachKleb",
       "label_DE": "Nachhaltige Kleb- und Dichtstoffe",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Colles et produits d'étanchéité durables",
+      "label_EN": "Sustainable adhesvies and sealants",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/colles-et-produits-detancheite-durables",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/sustainable-adhesives-and-sealants",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/nachhaltige-kleb-und-dichtstoffe-1"
     },
     "NegEmiss": {
       "id": "NegEmiss",
       "label_DE": "Negativemissionstechnologien",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Technologies à émissions négatives",
+      "label_EN": "Negative emissions technologies",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/technologies-a-emissions-negatives",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/negative-emissions-technologies",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/negativemissionstechnologien"
     },
     "Perowskit": {
       "id": "Perowskit",
       "label_DE": "Perowskit",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Pérovskite",
+      "label_EN": "Perovskit",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/perovskite",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/perovskite",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/perowskit"
     },
     "PersErn": {
       "id": "PersErn",
       "label_DE": "Personalisierte Ernährung",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Alimentation personnalisée",
+      "label_EN": "Personalized nutrition",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/alimentation-personnalisee",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/personalised-nutrition-1",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/personalisierte-ernaehrung-1"
     },
     "PhosRecycl": {
       "id": "PhosRecycl",
       "label_DE": "Phosphorrecycling",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Recyclage du phosphore",
+      "label_EN": "Phosphorus recycling",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/recyclage-du-phosphore",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/phosphorus-recycling",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/phosphorrecycling"
     },
     "PICS": {
       "id": "PICS",
       "label_DE": "Photonisch integrierte Schaltkreise (PICs)",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Circuits photoniques intégrés (PIC)",
+      "label_EN": "Photonic integrated circuits (PICs)",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/circuits-photoniques-integres-pic",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/pics-photonic-integrated-circuits",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/pics-1"
     },
     "PlasTech": {
       "id": "PlasTech",
       "label_DE": "Plasmatechnologien",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Technologies plasma",
+      "label_EN": "Plasma technologies",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/technologies-plasma",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/plasma-technologies",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/plasmatechnologien"
     },
     "QuantComp": {
       "id": "QuantComp",
       "label_DE": "Quantencomputer",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Ordinateurs quantiques",
+      "label_EN": "Quantum computing",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/ordinateurs-quantiques",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/quantum-computing-1",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/quantencomputer"
     },
     "Synfuels": {
       "id": "Synfuels",
       "label_DE": "Synfuels",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Carburants synthétiques",
+      "label_EN": "Synfuels",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/carburants-synthetiques",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/synfuels",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/synfuels"
     },
     "SynthBio": {
       "id": "SynthBio",
       "label_DE": "Synthetische Biologie",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Biologie de synthèse",
+      "label_EN": "Synthetic biology",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/biologie-de-synthese",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/synthetic-biology",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/synthetische-biologie-1"
     },
     "TiefGeo": {
       "id": "TiefGeo",
       "label_DE": "Tiefengeometrie",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Géothermie profonde",
+      "label_EN": "Deep geothermal energy",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/geothermie-profonde",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/deep-geothermal-energy",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/tiefengeothermie"
     },
     "TIMS": {
       "id": "TIMS",
       "label_DE": "Wärmeleitende elektrische Isolatoren (TIMs)",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Isolants électriques thermoconducteurs",
+      "label_EN": "Thermally conductive electrical insulators (TIMs)",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/tim",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/tims",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/tims"
     },
     "URLCC": {
       "id": "URLCC",
       "label_DE": "Ultrazuverlässige Echtzeitkommunikation",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Ultra-Reliable Low-Latency Communications",
+      "label_EN": "Ultra-reliable low-latency communications",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/communication-ultra-fiable-a-faible-latence",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/urllc",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/urllc"
     },
     "Wasserstoff": {
       "id": "Wasserstoff",
       "label_DE": "Wasserstoff",
-      "label_FR": "",
-      "label_EN": "",
+      "label_FR": "Hydrogène",
+      "label_EN": "Hydrogen",
+      "url_FR": "https://technology-outlook.satw.ch/fr/les-technologies-en-point-de-mire/hydrogene",
+      "url_EN": "https://technology-outlook.satw.ch/en/technologies-in-focus/hydrogen",
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/wasserstoff"
     }
   },
@@ -235,67 +295,103 @@
       "col": "Digitale Welt",
       "row": "Chemie",
       "value": 2,
-      "techIDs": ["IOT", "URLCC"]
+      "techIDs": [
+        "IOT",
+        "URLCC"
+      ]
     },
     {
       "col": "Digitale Welt",
       "row": "Pharma",
       "value": 2,
-      "techIDs": ["IOT", "URLCC"]
+      "techIDs": [
+        "IOT",
+        "URLCC"
+      ]
     },
     {
       "col": "Digitale Welt",
       "row": "Elektronik & Instrumente",
       "value": 4,
-      "techIDs": ["Ind50", "IOT", "PICS", "URLCC"]
+      "techIDs": [
+        "Ind50",
+        "IOT",
+        "PICS",
+        "URLCC"
+      ]
     },
     {
       "col": "Digitale Welt",
       "row": "Elektrotechnik",
       "value": 3,
-      "techIDs": ["Ind50", "IOT", "PICS"]
+      "techIDs": [
+        "Ind50",
+        "IOT",
+        "PICS"
+      ]
     },
     {
       "col": "Digitale Welt",
       "row": "Fahrzeug- & Maschinenbau",
       "value": 2,
-      "techIDs": ["Ind50", "IOT"]
+      "techIDs": [
+        "Ind50",
+        "IOT"
+      ]
     },
     {
       "col": "Digitale Welt",
       "row": "Druck, Holz & Papier",
       "value": 1,
-      "techIDs": ["IOT"]
+      "techIDs": [
+        "IOT"
+      ]
     },
     {
       "col": "Digitale Welt",
       "row": "Enerige, Wasser & Umwelt",
       "value": 3,
-      "techIDs": ["Ind50", "IOT"]
+      "techIDs": [
+        "Ind50",
+        "IOT",
+        "URLCC"
+      ]
     },
     {
       "col": "Digitale Welt",
       "row": "Kunststoffe",
       "value": 2,
-      "techIDs": ["Ind50", "IOT"]
+      "techIDs": [
+        "Ind50",
+        "IOT"
+      ]
     },
     {
       "col": "Digitale Welt",
       "row": "Metallverarbeitung",
       "value": 2,
-      "techIDs": ["Ind50", "IOT"]
+      "techIDs": [
+        "Ind50",
+        "IOT"
+      ]
     },
     {
       "col": "Digitale Welt",
       "row": "Nahrungsmittel",
       "value": 2,
-      "techIDs": ["Ind50", "IOT"]
+      "techIDs": [
+        "Ind50",
+        "IOT"
+      ]
     },
     {
       "col": "Digitale Welt",
       "row": "sonstige Industrien",
       "value": 2,
-      "techIDs": ["Ind50", "IOT"]
+      "techIDs": [
+        "Ind50",
+        "IOT"
+      ]
     },
     {
       "col": "Energie & Umwelt",
@@ -313,31 +409,44 @@
       "col": "Energie & Umwelt",
       "row": "Pharma",
       "value": 2,
-      "techIDs": ["KunstRecycl", "NegEmiss"]
+      "techIDs": [
+        "KunstRecycl",
+        "NegEmiss"
+      ]
     },
     {
       "col": "Energie & Umwelt",
       "row": "Elektronik & Instrumente",
       "value": 0,
-      "techIDs": ["", ""]
+      "techIDs": [
+        "",
+        ""
+      ]
     },
     {
       "col": "Energie & Umwelt",
       "row": "Elektrotechnik",
       "value": 0,
-      "techIDs": ["", ""]
+      "techIDs": [
+        "",
+        ""
+      ]
     },
     {
       "col": "Energie & Umwelt",
       "row": "Fahrzeug- & Maschinenbau",
       "value": 1,
-      "techIDs": ["Wasserstoff"]
+      "techIDs": [
+        "Wasserstoff"
+      ]
     },
     {
       "col": "Energie & Umwelt",
       "row": "Druck, Holz & Papier",
       "value": 1,
-      "techIDs": ["KunstRecycl"]
+      "techIDs": [
+        "KunstRecycl"
+      ]
     },
     {
       "col": "Energie & Umwelt",
@@ -357,7 +466,9 @@
       "col": "Energie & Umwelt",
       "row": "Kunststoffe",
       "value": 1,
-      "techIDs": ["KunstRecycl"]
+      "techIDs": [
+        "KunstRecycl"
+      ]
     },
     {
       "col": "Energie & Umwelt",
@@ -369,13 +480,20 @@
       "col": "Energie & Umwelt",
       "row": "Nahrungsmittel",
       "value": 3,
-      "techIDs": ["KunstRecycl", "NegEmiss", "PhosRecycl"]
+      "techIDs": [
+        "KunstRecycl",
+        "NegEmiss",
+        "PhosRecycl"
+      ]
     },
     {
       "col": "Energie & Umwelt",
       "row": "sonstige Industrien",
       "value": 2,
-      "techIDs": ["KunstRecycl", "NegEmiss"]
+      "techIDs": [
+        "KunstRecycl",
+        "NegEmiss"
+      ]
     },
     {
       "col": "Fertigungsprozesse & Materialien",
@@ -395,91 +513,151 @@
       "col": "Fertigungsprozesse & Materialien",
       "row": "Pharma",
       "value": 2,
-      "techIDs": ["FaserSens", "FlexBat"]
+      "techIDs": [
+        "FaserSens",
+        "FlexBat"
+      ]
     },
     {
       "col": "Fertigungsprozesse & Materialien",
       "row": "Elektronik & Instrumente",
       "value": 4,
-      "techIDs": ["2DMat", "FaserSens", "FlexBat", "Perowskit"]
+      "techIDs": [
+        "2DMat",
+        "FaserSens",
+        "FlexBat",
+        "Perowskit"
+      ]
     },
     {
       "col": "Fertigungsprozesse & Materialien",
       "row": "Elektrotechnik",
       "value": 4,
-      "techIDs": ["2DMat", "FaserSens", "FlexBat", "Perowskit"]
+      "techIDs": [
+        "2DMat",
+        "FaserSens",
+        "FlexBat",
+        "Perowskit"
+      ]
     },
     {
       "col": "Fertigungsprozesse & Materialien",
       "row": "Fahrzeug- & Maschinenbau",
       "value": 3,
-      "techIDs": ["FaserSens", "NachKleb", "TIMS"]
+      "techIDs": [
+        "FaserSens",
+        "NachKleb",
+        "TIMS"
+      ]
     },
     {
       "col": "Fertigungsprozesse & Materialien",
       "row": "Druck, Holz & Papier",
       "value": 4,
-      "techIDs": ["CO2Kunst", "FaserSens", "FlexBat", "NachKleb"]
+      "techIDs": [
+        "CO2Kunst",
+        "FaserSens",
+        "FlexBat",
+        "NachKleb"
+      ]
     },
     {
       "col": "Fertigungsprozesse & Materialien",
       "row": "Enerige, Wasser & Umwelt",
       "value": 5,
-      "techIDs": ["BioPlast", "CO2Beton", "CO2Kunst", "FaserSens", "Perowskit"]
+      "techIDs": [
+        "BioPlast",
+        "CO2Beton",
+        "CO2Kunst",
+        "FaserSens",
+        "Perowskit"
+      ]
     },
     {
       "col": "Fertigungsprozesse & Materialien",
       "row": "Kunststoffe",
       "value": 3,
-      "techIDs": ["BioPlast", "FaserSens", "NachKleb"]
+      "techIDs": [
+        "BioPlast",
+        "FaserSens",
+        "NachKleb"
+      ]
     },
     {
       "col": "Fertigungsprozesse & Materialien",
       "row": "Metallverarbeitung",
       "value": 1,
-      "techIDs": ["FaserSens"]
+      "techIDs": [
+        "FaserSens"
+      ]
     },
     {
       "col": "Fertigungsprozesse & Materialien",
       "row": "Nahrungsmittel",
       "value": 1,
-      "techIDs": ["FaserSens"]
+      "techIDs": [
+        "FaserSens"
+      ]
     },
     {
       "col": "Fertigungsprozesse & Materialien",
       "row": "sonstige Industrien",
       "value": 1,
-      "techIDs": ["FaserSens"]
+      "techIDs": [
+        "FaserSens"
+      ]
     },
     {
       "col": "Life Sciences",
       "row": "Chemie",
       "value": 5,
-      "techIDs": ["BioInsp", "BioKat", "HumAug", "mRNA", "SynthBio"]
+      "techIDs": [
+        "BioInsp",
+        "BioKat",
+        "HumAug",
+        "mRNA",
+        "SynthBio"
+      ]
     },
     {
       "col": "Life Sciences",
       "row": "Pharma",
       "value": 6,
-      "techIDs": ["BaktPhag", "BioInsp", "BioKat", "HumAug", "mRNA", "SynthBio"]
+      "techIDs": [
+        "BaktPhag",
+        "BioInsp",
+        "BioKat",
+        "HumAug",
+        "mRNA",
+        "SynthBio"
+      ]
     },
     {
       "col": "Life Sciences",
       "row": "Elektronik & Instrumente",
       "value": 2,
-      "techIDs": ["BioInsp", "HumAug"]
+      "techIDs": [
+        "BioInsp",
+        "HumAug"
+      ]
     },
     {
       "col": "Life Sciences",
       "row": "Elektrotechnik",
       "value": 2,
-      "techIDs": ["BioInsp", "HumAug"]
+      "techIDs": [
+        "BioInsp",
+        "HumAug"
+      ]
     },
     {
       "col": "Life Sciences",
       "row": "Fahrzeug- & Maschinenbau",
       "value": 2,
-      "techIDs": ["BioInsp", "HumAug"]
+      "techIDs": [
+        "BioInsp",
+        "HumAug"
+      ]
     },
     {
       "col": "Life Sciences",
@@ -491,13 +669,21 @@
       "col": "Life Sciences",
       "row": "Enerige, Wasser & Umwelt",
       "value": 3,
-      "techIDs": ["BaktPhag", "BioInsp", "BioKat"]
+      "techIDs": [
+        "BaktPhag",
+        "BioInsp",
+        "BioKat"
+      ]
     },
     {
       "col": "Life Sciences",
       "row": "Kunststoffe",
       "value": 3,
-      "techIDs": ["BaktPhag", "BioInsp", "BioKat"]
+      "techIDs": [
+        "BaktPhag",
+        "BioInsp",
+        "BioKat"
+      ]
     },
     {
       "col": "Life Sciences",
