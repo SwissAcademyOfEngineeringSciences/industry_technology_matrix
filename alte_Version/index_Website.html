@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8" />
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+/>
+
+<title>Technologien nach Industrieklassen</title>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    /* -----------------------------------
+       RESPONSIVE CONTAINER
+       chart ~65% width, details the rest
+       wraps to a single column on narrow screens
+    ----------------------------------- */
+
+    .container_matDE {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 0px;
+
+        align-items: flex-start;
+
+        width: 100%;
+    }
+
+
+    #chart_matDE {
+
+        flex: 1 1 65%;
+
+        max-width: 100%;
+
+        min-width: 280px;
+
+        padding: 0px;
+    }
+
+
+    /* SVG shrinks/grows with its container */
+
+    #chart_matDE svg {
+
+        display: block;
+
+        width: 100%;
+
+        height: auto;
+    }
+
+
+    #details_matDE {
+
+        flex: 1 1 30%;
+
+        max-width: 100%;
+
+        min-width: 260px;
+
+        min-height: 200px;
+
+        background: rgb(255, 255, 255);
+
+        border-radius: 0px;
+
+        transform: translateY(175px);   
+    }
+
+
+    /* Stack vertically on small screens */
+
+    @media (max-width: 1067px) {
+
+        #chart_matDE {
+
+            flex-basis: 100%;
+        }
+
+        #details_matDE {
+
+            flex-basis: 100%;
+            transform: none;
+      }
+
+    }
+
+
+    /* -----------------------------------
+       CELLS
+    ----------------------------------- */
+
+    .cell_matDE {
+
+        stroke: white;
+
+        stroke-width: 2px;
+
+        cursor: pointer;
+
+        transition: opacity 0.2s;
+    }
+
+
+    .cell_matDE:hover {
+
+        opacity: 0.85;
+    }
+
+
+    /* -----------------------------------
+       AXIS LABELS
+    ----------------------------------- */
+
+    .axis-label_matDE {
+
+        font-size: 16px;
+
+        fill: #333;
+    }
+
+
+    /* -----------------------------------
+       AXIS TITLES
+    ----------------------------------- */
+
+    .axis-title_matDE {
+
+        font-size: 18px;
+
+        font-weight: bold;
+
+        fill: #333;
+    }
+
+
+    /* -----------------------------------
+       VALUE LABELS
+    ----------------------------------- */
+
+    .value-label_matDE {
+
+        fill: white;
+
+        font-size: 14px;
+
+        font-weight: bold;
+
+        pointer-events: none;
+    }
+
+
+    /* -----------------------------------
+       DETAILS
+    ----------------------------------- */
+
+    .tech-item_matDE {
+
+        margin-bottom: 12px;
+
+        padding-bottom: 12px;
+
+        border-bottom: 0px solid #eee;
+    }
+
+
+    .tech-item_matDE p {
+
+        margin: 0 0 10px 0;
+
+        line-height: 1.4;
+
+        color: #555;
+    }
+
+
+    .tech-item_matDE a {
+
+        color: steelblue;
+
+        text-decoration: none;
+    }
+
+
+    .tech-item_matDE a:hover {
+
+        text-decoration: underline;
+    }
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h3>
+    Welche Industrieklassen von zukunftsträchtigen Technologien profitieren
+</h3>
+
+
+<div class="container_matDE">
+
+    <div id="chart_matDE"></div>
+
+
+    <div id="details_matDE">
+
+        <h3>
+            Weiterführende Infos
+        </h3>
+
+        <p>
+            Mehr Details durch Klick auf eine Zelle
+        </p>
+
+    </div>
+
+</div>
+
+
+<p>
+    
+    Die Grafik zeigt, in welchen Industrieklassen die
+    Technologien aus dem Technology Outlook 2025 gemäss Expert:inneneinschätzung besonders
+    relevant werden dürften.
+
+    Die Zahlen geben die Anzahl relevanter
+    Technologien pro Forschungsfeld an.
+
+    Durch einen Klick auf die Zahl erfahren Sie,
+    um welche Technologien es sich handelt.
+
+</p>
+
+
+
+<script>
+
+
+// ==================================================
+// JSON LADEN
+// ==================================================
+
+d3.json(
+    "https://raw.githack.com/SwissAcademyOfEngineeringSciences/industry_technology_matrix/main/data.json"
+)
+
+// d3.json("data.json")
+
+.then(function(data) {
+
+    createHeatmap(data);
+
+})
+
+.catch(function(error) {
+
+    console.error(
+        "Fehler beim Laden der JSON-Datei:",
+        error
+    );
+
+});
+
+
+// ==================================================
+// HEATMAP
+// ==================================================
+
+function createHeatmap(data) {
+
+
+    // -----------------------------------
+    // SETTINGS
+    // -----------------------------------
+
+    const margin = {
+
+        /*
+         * More space at the top because the
+         * column labels are rotated.
+         */
+
+        top: 265,
+
+        right: 20,
+
+        bottom: 20,
+
+        left: 250
+    };
+
+
+    const cellSize = 60;
+
+
+    const width =
+        data.cols.length
+        * 2
+        * cellSize;
+
+
+    const height =
+        data.rows.length
+        * cellSize;
+
+
+    const totalWidth =
+        width
+        + margin.left
+        + margin.right;
+
+
+    const totalHeight =
+        height
+        + margin.top
+        + margin.bottom;
+
+
+    // -----------------------------------
+    // SVG
+    // -----------------------------------
+
+    const svg =
+        d3.select("#chart_matDE")
+
+        .append("svg")
+
+        .attr(
+            "viewBox",
+            `0 0 ${totalWidth} ${totalHeight}`
+        )
+
+        .attr(
+            "preserveAspectRatio",
+            "xMinYMin meet"
+        );
+
+
+    // -----------------------------------
+    // MAIN GROUP
+    // -----------------------------------
+
+    const g =
+        svg.append("g")
+
+        .attr(
+            "transform",
+            `translate(
+                ${margin.left},
+                ${margin.top}
+            )`
+        );
+
+
+    // ==================================================
+    // SCALES
+    // ==================================================
+
+    const xScale =
+        d3.scaleBand()
+
+        .domain(data.cols)
+
+        .range([
+            0,
+            width
+        ])
+
+        .padding(0.05);
+
+
+    const yScale =
+        d3.scaleBand()
+
+        .domain(data.rows)
+
+        .range([
+            0,
+            height
+        ])
+
+        .padding(0.05);
+
+
+    // ==================================================
+    // COLOR SCALE
+    // ==================================================
+
+    const maxValue =
+        d3.max(
+            data.cells,
+            d => d.value
+        );
+
+
+    const colorScale =
+        d3.scaleSequential()
+
+        .domain([
+            0,
+            maxValue
+        ])
+
+        .range([
+            "#b89ad9",
+            "#b3104e"
+        ]);
+
+
+    // ==================================================
+    // X-AXIS TITLE
+    // ==================================================
+
+    /*
+     * This title describes the columns.
+     *
+     * It is centered over the complete heatmap.
+     */
+
+    g.append("text")
+
+        .attr(
+            "class",
+            "axis-title_matDE"
+        )
+
+        .attr(
+            "x",
+            width / 2
+        )
+
+        .attr(
+            "y",
+            -250
+        )
+
+        .attr(
+            "text-anchor",
+            "middle"
+        )
+
+        .text(
+            "Forschungsfelder"
+        );
+
+
+    // ==================================================
+    // Y-AXIS TITLE
+    // ==================================================
+
+    /*
+     * This title describes the rows.
+     *
+     * It is rotated by -90 degrees and positioned
+     * to the left of the industry labels.
+     */
+
+    g.append("text")
+
+        .attr(
+            "class",
+            "axis-title_matDE"
+        )
+
+        .attr(
+            "text-anchor",
+            "middle"
+        )
+
+        .attr(
+            "transform",
+            `
+                rotate(-90)
+                translate(
+                    ${-height / 2},
+                    ${-margin.left + 45}
+                )
+            `
+        )
+
+        .text(
+            "Industrieklassen"
+        );
+
+
+    // ==================================================
+    // X LABELS
+    // ==================================================
+
+    g.selectAll(".x-label")
+
+        .data(data.cols)
+
+        .enter()
+
+        .append("text")
+
+        .attr(
+            "class",
+            "axis-label_matDE"
+        )
+
+        .attr(
+            "x",
+            d =>
+                xScale(d)
+                +
+                xScale.bandwidth() / 2
+        )
+
+        .attr(
+            "y",
+            -10
+        )
+
+        .attr(
+            "text-anchor",
+            "start"
+        )
+
+        .attr(
+            "transform",
+            d => `
+
+                rotate(
+                    -90,
+
+                    ${
+                        xScale(d)
+                        +
+                        xScale.bandwidth() / 2
+                    },
+
+                    -10
+                )
+
+            `
+        )
+
+        .text(
+            d => d
+        );
+
+
+    // ==================================================
+    // Y LABELS
+    // ==================================================
+
+    g.selectAll(".y-label")
+
+        .data(data.rows)
+
+        .enter()
+
+        .append("text")
+
+        .attr(
+            "class",
+            "axis-label_matDE"
+        )
+
+        .attr(
+            "x",
+            -10
+        )
+
+        .attr(
+            "y",
+            d =>
+                yScale(d)
+                +
+                yScale.bandwidth() / 2
+        )
+
+        .attr(
+            "text-anchor",
+            "end"
+        )
+
+        .attr(
+            "dominant-baseline",
+            "middle"
+        )
+
+        .text(
+            d => d
+        );
+
+
+    // ==================================================
+    // CELLS
+    // ==================================================
+
+    g.selectAll(".cell_matDE")
+
+        .data(data.cells)
+
+        .enter()
+
+        .append("rect")
+
+        .attr(
+            "class",
+            "cell_matDE"
+        )
+
+        .attr(
+            "x",
+            d => xScale(d.col)
+        )
+
+        .attr(
+            "y",
+            d => yScale(d.row)
+        )
+
+        .attr(
+            "width",
+            xScale.bandwidth()
+        )
+
+        .attr(
+            "height",
+            yScale.bandwidth()
+        )
+
+        .attr(
+            "rx",
+            6
+        )
+
+        .attr(
+            "fill",
+            d => colorScale(d.value)
+        )
+
+
+        // -----------------------------------
+        // CLICK
+        // -----------------------------------
+
+        .on(
+            "click",
+            function(event, d) {
+
+                const technologies =
+                    d.techIDs
+
+                    .filter(
+                        id => id !== ""
+                    )
+
+                    .map(
+                        id =>
+                            data.technologies[id]
+                    )
+
+                    .filter(
+                        tech => tech !== undefined
+                    );
+
+
+                renderDetails(
+                    d,
+                    technologies
+                );
+
+            }
+        );
+
+
+    // ==================================================
+    // VALUE LABELS
+    // ==================================================
+
+    g.selectAll(".value-label_matDE")
+
+        .data(data.cells)
+
+        .enter()
+
+        .append("text")
+
+        .attr(
+            "class",
+            "value-label_matDE"
+        )
+
+        .attr(
+            "x",
+            d =>
+                xScale(d.col)
+                +
+                xScale.bandwidth() / 2
+        )
+
+        .attr(
+            "y",
+            d =>
+                yScale(d.row)
+                +
+                yScale.bandwidth() / 2
+        )
+
+        .attr(
+            "text-anchor",
+            "middle"
+        )
+
+        .attr(
+            "dominant-baseline",
+            "middle"
+        )
+
+        .text(
+            d => d.value
+        );
+
+}
+
+
+// ==================================================
+// DETAILS PANEL
+// ==================================================
+
+function renderDetails(
+    cell,
+    technologies
+) {
+
+
+    let html =
+        "<h3>Weiterführende Infos</h3>";
+
+
+    // -----------------------------------
+    // ZERO
+    // -----------------------------------
+
+    if (cell.value === 0) {
+
+        html += `
+
+            <p>
+
+                Für die Industrieklasse
+                «${cell.row}»
+
+                wird keine der Technologien
+                aus dem Forschungsfeld
+                «${cell.col}»
+
+                als relevant erachtet.
+
+            </p>
+
+            <i>Klicken Sie auf die nächste Zahl.</i>
+
+        `;
+
+    }
+
+
+    // -----------------------------------
+    // TECHNOLOGIES
+    // -----------------------------------
+
+    else {
+
+        html += `
+
+            <p>
+
+                Für die Industrieklasse
+                «${cell.row}»
+
+                ${
+                    cell.value === 1
+                        ? "wird folgende Technologie"
+                        : `werden folgende ${cell.value} Technologien`
+                }
+
+                aus dem Forschungsfeld
+                «${cell.col}»
+
+                als relevant erachtet:
+
+            </p>
+
+
+        `;
+
+
+        const listItems =
+
+            technologies
+
+            .map(
+                tech => `
+
+                    <li>
+
+                        <a
+                            href="${tech.url_DE}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            ${tech.label_DE}
+
+                        </a>
+
+                    </li>
+
+                `
+            )
+
+            .join("");
+
+
+        html += `
+
+            <ul class="tech-list">
+
+                ${listItems}
+
+            </ul>
+
+        `;
+
+        html += `
+                    <i>Klicken Sie auf die nächste Zahl.</i>
+
+    `;
+
+    }
+
+
+    // -----------------------------------
+    // UPDATE PANEL
+    // -----------------------------------
+
+    document.getElementById(
+        "details_matDE"
+    ).innerHTML = html;
+
+}
+
+</script>
+
+
+</body>
+
+</html>

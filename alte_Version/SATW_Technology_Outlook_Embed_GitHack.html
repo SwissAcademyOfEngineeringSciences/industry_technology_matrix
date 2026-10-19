@@ -1,0 +1,1002 @@
+<!-- SATW Technology Outlook: isoliertes Embed-Widget -->
+<style>
+
+      /* Einbettungs-Schutz: keine Auswirkungen auf die restliche Website. */
+      #satw-techoutlook-MATDE,
+      #satw-techoutlook-MATDE *,
+      #satw-techoutlook-MATDE *::before,
+      #satw-techoutlook-MATDE *::after {
+        box-sizing: border-box;
+      }
+      #satw-techoutlook-MATDE {
+        width: 100%;
+        max-width: 1320px;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: normal;
+        text-transform: none;
+        color: #1d1d1b;
+        background: transparent;
+      }
+      #satw-techoutlook-MATDE button {
+        font-family: inherit;
+        line-height: normal;
+        letter-spacing: normal;
+        text-transform: none;
+        box-shadow: none;
+        min-height: 0;
+        min-width: 0;
+      }
+      #satw-techoutlook-MATDE [hidden] { display: none !important; }
+      #satw-techoutlook-MATDE h1,
+      #satw-techoutlook-MATDE h2,
+      #satw-techoutlook-MATDE h3,
+      #satw-techoutlook-MATDE p {
+        font-family: inherit;
+        letter-spacing: normal;
+        text-transform: none;
+      }
+
+      #satw-techoutlook-MATDE {
+        --paper: #f7f5f0;
+        --ink: #1d1d1b;
+        --muted: #706f6b;
+        --line: #d8d5cd;
+        --accent: #c61010;
+        --digital: #c61010;
+        --energie: #52007e;
+        --fertigung: #9f0c90;
+        --life: #e07317;
+        --tile: 16px;
+        --gap: 5px;
+        --group-gap: 0px;
+        --label-w: 12vw;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      #satw-techoutlook-MATDE.wrap-MATDE {
+        max-width: 1320px;
+        margin: auto;
+        padding: 42px 30px 36px;
+      }
+
+      #satw-techoutlook-MATDE h1 {
+        font-size: 1em;
+        line-height: 1.03;
+        max-width: 950px;
+        margin: 0 0 18px;
+        font-weight: 650;
+      }
+
+      #satw-techoutlook-MATDE .lede-MATDE {
+        max-width: 900px;
+        font-size: 0.7em;
+        line-height: 1.55;
+        margin: 0 0 28px;
+        color: #3f3e3a;
+      }
+
+      #satw-techoutlook-MATDE .controls-MATDE {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0 0 24px;
+      }
+
+      #satw-techoutlook-MATDE .controls-label-MATDE {
+        font-size: 0.7em;
+        font-weight: 700;
+        margin-right: 4px;
+      }
+
+      #satw-techoutlook-MATDE .chip-MATDE,
+      #satw-techoutlook-MATDE .reset-MATDE {
+        font: inherit;
+        font-size: 0.7em;
+        border: 1px solid var(--line);
+        background: transparent;
+        padding: 7px 10px;
+        border-radius: 999px;
+        cursor: pointer;
+      }
+
+      #satw-techoutlook-MATDE .chip-MATDE {
+        display: inline-flex;
+        gap: 7px;
+        align-items: center;
+      }
+
+      #satw-techoutlook-MATDE .chip-MATDE:before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 2px;
+        background: var(--c);
+      }
+
+      #satw-techoutlook-MATDE .chip-MATDE[aria-pressed="false"] {
+        opacity: 0.38;
+      }
+
+      #satw-techoutlook-MATDE .reset-MATDE {
+        margin-left: auto;
+        border-color: #aaa;
+      }
+
+      #satw-techoutlook-MATDE .layout-MATDE {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 180px;
+        gap: 38px;
+        align-items: start;
+      }
+
+      #satw-techoutlook-MATDE .chart-MATDE {
+        position: relative;
+        min-width: 0;
+      }
+
+      #satw-techoutlook-MATDE .technology-axis-label-MATDE {
+        position: absolute;
+        top: -1.5em;
+        right: 0;
+        font-size: 0.7em;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+        text-align: right;
+      }
+
+      #satw-techoutlook-MATDE .row-MATDE {
+        display: grid;
+        grid-template-columns: var(--label-w) minmax(0, 1fr) 3rem;
+        align-items: center;
+        gap: 14px;
+        padding: 6px 0;
+        border-bottom: 1px solid var(--line);
+        transition: transform 0.3s;
+      }
+
+      #satw-techoutlook-MATDE .row-MATDE:first-of-type {
+        border-top: 1px solid var(--line);
+      }
+
+      #satw-techoutlook-MATDE .row-label-MATDE {
+        font-size: 0.7em;
+        text-align: right;
+      }
+
+      #satw-techoutlook-MATDE .row-MATDE.is-hit-MATDE .row-label-MATDE {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      #satw-techoutlook-MATDE .row-MATDE.is-empty-MATDE .row-label-MATDE {
+        color: var(--muted);
+      }
+
+      #satw-techoutlook-MATDE .bar-MATDE {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px var(--group-gap);
+        min-width: 0;
+      }
+
+      #satw-techoutlook-MATDE .field-block-MATDE {
+        display: inline-flex;
+        gap: var(--gap);
+        align-items: center;
+        padding: 4px;
+        border: 0;
+        background: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        transition:
+          opacity 0.18s,
+          transform 0.18s,
+          box-shadow 0.18s;
+      }
+
+      /* Desktop: Hover hebt die Kachel leicht an und zeigt einen grauen Rahmen. */
+      @media (hover: hover) and (pointer: fine) {
+        #satw-techoutlook-MATDE .field-block-MATDE:hover {
+          transform: translateY(-1px);
+          box-shadow: 0 0 0 2px rgba(29, 29, 27, 0.25);
+        }
+      }
+
+      #satw-techoutlook-MATDE .field-block-MATDE:focus-visible {
+        outline: 2px solid var(--ink);
+        outline-offset: 2px;
+      }
+
+      #satw-techoutlook-MATDE .tile-MATDE {
+        width: var(--tile);
+        height: var(--tile);
+        flex: none;
+        border-radius: 3px;
+        background: var(--c);
+      }
+
+      #satw-techoutlook-MATDE .chart-MATDE.has-selection-MATDE .field-block-MATDE {
+        opacity: 0.18;
+      }
+
+      #satw-techoutlook-MATDE .chart-MATDE.has-selection-MATDE .field-block-MATDE.is-match-MATDE {
+        opacity: 1;
+
+        box-shadow: 0 0 0 2px var(--ink);
+      }
+
+      #satw-techoutlook-MATDE .field-block-MATDE.is-off-MATDE {
+        opacity: 0.08;
+        pointer-events: none;
+      }
+
+      #satw-techoutlook-MATDE .row-total-MATDE {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.7em;
+        color: var(--muted);
+        text-align: right;
+      }
+
+      #satw-techoutlook-MATDE .detail-MATDE {
+        border-top: 3px solid var(--ink);
+        padding-top: 18px;
+        position: sticky;
+        top: 24px;
+        min-height: 250px;
+      }
+
+      #satw-techoutlook-MATDE .detail-MATDE h2 {
+        font-size: 0.7em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+        margin: 0 0 22px;
+      }
+
+      #satw-techoutlook-MATDE .detail-MATDE h3 {
+        font-size: 0.7em;
+        line-height: 1.15;
+        margin: 0 0 12px;
+      }
+
+      #satw-techoutlook-MATDE .detail-MATDE p {
+  font-size: 0.7em;
+  line-height: 1.55;
+}
+
+      #satw-techoutlook-MATDE .field-badge-MATDE {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 0.7em;
+        margin-bottom: 8px;
+      }
+
+      #satw-techoutlook-MATDE .swatch-MATDE {
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        background: var(--c);
+      }
+
+      #satw-techoutlook-MATDE .tech-list-MATDE {
+        padding-left: 20px;
+        margin: 14px 0 0;
+      }
+
+      #satw-techoutlook-MATDE .tech-list-MATDE {
+  font-size: 0.7em;
+  padding-left: 20px;
+  margin: 14px 0 0;
+}
+
+      #satw-techoutlook-MATDE .tech-list-MATDE li {
+  font-size: inherit;
+  line-height: 1.35;
+  margin: 0 0 9px;
+}
+
+      #satw-techoutlook-MATDE .tech-list-MATDE a {
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--ink);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+      #satw-techoutlook-MATDE .tech-list-MATDE a:hover {
+        color: var(--accent);
+      }
+
+      #satw-techoutlook-MATDE .tip-MATDE {
+        position: absolute;
+        z-index: 10;
+        transform: translate(-50%, -100%);
+        background: var(--ink);
+        color: #fff;
+        padding: 7px 9px;
+        border-radius: 4px;
+        font-size: 0.7em;
+        line-height: 1.3;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.12s;
+        white-space: nowrap;
+      }
+
+      #satw-techoutlook-MATDE .tip-MATDE.is-on-MATDE {
+        opacity: 1;
+      }
+
+      #satw-techoutlook-MATDE .tip-MATDE span {
+        display: block;
+        color: #d8d5cd;
+      }
+
+/* Tooltip auf Smartphones und Touch-Geräten ausblenden */
+
+      @media (hover: none) and (pointer: coarse) {
+      #satw-techoutlook-MATDE .tip-MATDE {
+    display: none !important;
+  }
+      }
+
+      #satw-techoutlook-MATDE .notes-MATDE {
+  border-top: 1px solid var(--line);
+  margin-top: 34px;
+  padding-top: 16px;
+  font-size: 0.7em;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+      #satw-techoutlook-MATDE .notes-MATDE p {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: normal;
+}
+
+      #satw-techoutlook-MATDE .notes-MATDE a {
+        color: inherit;
+      }
+
+      #satw-techoutlook-MATDE .empty-MATDE {
+        color: var(--muted);
+      }
+
+      @media (max-width: 1050px) {
+      #satw-techoutlook-MATDE .layout-MATDE {
+          grid-template-columns: 1fr;
+        }
+
+      #satw-techoutlook-MATDE .detail-MATDE {
+          position: static;
+        }
+
+      #satw-techoutlook-MATDE.wrap-MATDE {
+          padding: 30px 20px;
+        }
+      }
+
+      @media (max-width: 680px) {
+      #satw-techoutlook-MATDE {
+          --label-w: 96px;
+          --tile: 10px;
+          --gap: 2px;
+          --group-gap: 0px;
+        }
+
+      #satw-techoutlook-MATDE.wrap-MATDE {
+          padding: 24px 12px;
+        }
+
+      #satw-techoutlook-MATDE .row-MATDE {
+          grid-template-columns: 96px minmax(0, 1fr) 1.5rem;
+          gap: 5px;
+           padding: 4px 0;
+        }
+
+      #satw-techoutlook-MATDE .field-block-MATDE {
+          padding: 2px;
+        }
+
+      #satw-techoutlook-MATDE .layout-MATDE {
+          gap: 25px;
+        }
+
+      #satw-techoutlook-MATDE .reset-MATDE {
+          margin-left: 0;
+        }
+      }
+
+      #satw-techoutlook-MATDE .chart-area-MATDE {
+        display: grid;
+        grid-template-columns: 18px minmax(0, 1fr);
+        align-items: stretch;
+        gap: 8px;
+      }
+
+      #satw-techoutlook-MATDE .industry-axis-label-MATDE {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 0.7em;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      @media (max-width: 700px) {
+      #satw-techoutlook-MATDE .legend-MATDE {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    align-items: stretch;
+  }
+
+      #satw-techoutlook-MATDE .legend-MATDE button {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    white-space: normal;
+    text-align: left;
+    overflow-wrap: break-word;
+    line-height: 1.3;
+  }
+      }
+
+/* Ausgewählt: schwarzer Einzelrahmen, auch bei Hover; kein doppelter Fokusrahmen. */
+#satw-techoutlook-MATDE .chart-MATDE.has-selection-MATDE .field-block-MATDE.is-match-MATDE:hover { box-shadow: 0 0 0 2px var(--ink); }
+#satw-techoutlook-MATDE .chart-MATDE.has-selection-MATDE .field-block-MATDE.is-match-MATDE:focus-visible { outline: none; }
+/* Touch: keine Hover-Animation oder graue Hover-Kontur. */
+@media (hover: none), (pointer: coarse) {
+  #satw-techoutlook-MATDE .field-block-MATDE:hover { transform: none; box-shadow: none; }
+  #satw-techoutlook-MATDE .chart-MATDE.has-selection-MATDE .field-block-MATDE.is-match-MATDE:hover { box-shadow: 0 0 0 2px var(--ink); }
+}
+@media (max-width: 680px) {
+  #satw-techoutlook-MATDE .bar-MATDE { column-gap: 0; row-gap: 3px; }
+  #satw-techoutlook-MATDE .tile-MATDE { border-radius: 2px; }
+  #satw-techoutlook-MATDE .field-block-MATDE { min-width: max-content; min-height: 0; line-height: 1; }
+}
+</style>
+<div class="wrap-MATDE" id="satw-techoutlook-MATDE">
+      <h1>
+        Welche Industrieklassen von zukunftsträchtigen Technologien profitieren
+      </h1>
+
+      <p class="lede-MATDE">
+        Jede Zeile entspricht einer Industrieklasse. Die darin abgebildeten
+        Rechtecke stehen für einzelne Technologien, die für diese
+        Industrieklasse. Rechtecke gleicher Farbe gehören zum selben
+        Forschungsfeld.&#x20;
+      </p>
+
+      <p class="lede-MATDE">
+        &#x20; Klicken Sie auf einen farbigen Block, um die zugehörigen
+        Technologien kennenzulernen.
+      </p>
+
+      <div class="controls-MATDE">
+        <span class="controls-label-MATDE" id="filter-label-MATDE"
+          >Forschungsfelder:</span
+        >
+        <div
+          id="legend-MATDE"
+          role="group"
+          aria-labelledby="filter-label-MATDE"
+          style="display: contents"
+        ></div>
+
+        <button class="reset-MATDE" id="reset-MATDE" hidden>
+          Auswahl aufheben
+        </button>
+      </div>
+
+      <div class="layout-MATDE">
+        <div class="chart-area-MATDE">
+          <div class="industry-axis-label-MATDE">Industrieklassen</div>
+
+          <div class="chart-MATDE" id="chart-MATDE">
+            <div class="technology-axis-label-MATDE">Anzahl Technologien</div>
+          </div>
+
+          <div class="tip-MATDE" id="tip-MATDE" aria-hidden="true"></div>
+        </div>
+
+        <aside
+          class="detail-MATDE"
+          id="detail-MATDE"
+          aria-live="polite"
+        ></aside>
+      </div>
+
+      <div class="notes-MATDE">
+        <p>
+          Quelle: Eigene Darstellung. Zur Methodik vgl.
+
+          <a
+            href="https://technology-outlook.satw.ch/de/mehr-zum-technology-outlook"
+            target="_blank"
+            rel="noopener noreferrer"
+            >hier</a
+          >.
+        </p>
+      </div>
+    </div>
+<script>
+(function () {
+
+      // HIER die vollständige GitHack-CDN-URL deiner JSON-Datei eintragen.
+      // Beispiel: https://rawcdn.githack.com/USERNAME/REPOSITORY/COMMIT/data.json
+      const DATA_URL_MATDE = "https://raw.githack.com/SwissAcademyOfEngineeringSciences/industry_technology_matrix/main/data.json";
+
+      const COLORS_MATDE = {
+        "Digitale Welt": "var(--digital)",
+
+        "Energie & Umwelt": "var(--energie)",
+
+        "Fertigungsprozesse & Materialien": "var(--fertigung)",
+
+        "Life Sciences": "var(--life)",
+      };
+
+      const LABEL_FIX_MATDE = {
+        "Enerige, Wasser & Umwelt": "Energie, Wasser & Umwelt",
+      };
+
+      const state_MATDE = {
+        data: null,
+
+        rows: [],
+
+        cols: [],
+
+        techs: {},
+
+        active: new Set(),
+
+        selected: null,
+      };
+
+      const el_MATDE = {
+        chart: document.getElementById("chart-MATDE"),
+
+        legend: document.getElementById("legend-MATDE"),
+
+        detail: document.getElementById("detail-MATDE"),
+
+        reset: document.getElementById("reset-MATDE"),
+
+        tip: document.getElementById("tip-MATDE"),
+      };
+
+      const esc_MATDE = (s) =>
+        String(s ?? "").replace(
+          /[&<>"']/g,
+
+          (c) =>
+            ({
+              "&": "&amp;",
+
+              "<": "&lt;",
+
+              ">": "&gt;",
+
+              '"': "&quot;",
+
+              "'": "&#39;",
+            })[c],
+        );
+
+      function build_MATDE(data) {
+        state_MATDE.data = data;
+
+        state_MATDE.cols = [...data.cols];
+
+        state_MATDE.techs = data.technologies || {};
+
+        if (!state_MATDE.active.size)
+          state_MATDE.active = new Set(state_MATDE.cols);
+
+        state_MATDE.rows = data.rows
+
+          .map((key) => {
+            const cells = state_MATDE.cols
+
+              .map((col) => {
+                const raw = data.cells.find(
+                  (c) => c.row === key && c.col === col,
+                );
+
+                const ids = (raw?.techIDs || []).filter(
+                  (id) => id && state_MATDE.techs[id],
+                );
+
+                return { row: key, col, ids, value: ids.length };
+              })
+
+              .filter((c) => c.value > 0);
+
+            return {
+              key,
+
+              label: LABEL_FIX_MATDE[key] || key,
+
+              cells,
+
+              total: cells.reduce((n, c) => n + c.value, 0),
+            };
+          })
+
+          .sort(
+            (a, b) => b.total - a.total || a.label.localeCompare(b.label, "de"),
+          );
+
+        renderLegend_MATDE();
+
+        renderChart_MATDE();
+
+        renderDetail_MATDE();
+      }
+
+      function renderLegend_MATDE() {
+        el_MATDE.legend.innerHTML = "";
+
+        state_MATDE.cols.forEach((col) => {
+          const b = document.createElement("button");
+
+          b.type = "button";
+
+          b.className = "chip-MATDE";
+
+          b.style.setProperty("--c", COLORS_MATDE[col]);
+
+          b.textContent = col;
+
+          b.setAttribute("aria-pressed", String(state_MATDE.active.has(col)));
+
+          b.onclick = () => toggleField_MATDE(col);
+
+          el_MATDE.legend.appendChild(b);
+        });
+      }
+
+      function toggleField_MATDE(col) {
+        state_MATDE.active.has(col)
+          ? state_MATDE.active.delete(col)
+          : state_MATDE.active.add(col);
+
+        if (!state_MATDE.active.size) state_MATDE.active.add(col);
+
+        if (
+          state_MATDE.selected &&
+          !state_MATDE.active.has(state_MATDE.selected.col)
+        )
+          state_MATDE.selected = null;
+
+        renderLegend_MATDE();
+
+        reorder_MATDE();
+
+        applyState_MATDE();
+
+        renderDetail_MATDE();
+      }
+
+      function renderChart_MATDE() {
+        el_MATDE.chart
+          .querySelectorAll(".row-MATDE")
+          .forEach((n) => n.remove());
+
+        state_MATDE.rows.forEach((row) => {
+          const r = document.createElement("div");
+
+          r.className = "row-MATDE";
+
+          r.dataset.row = row.key;
+
+          const lab = document.createElement("div");
+
+          lab.className = "row-label-MATDE";
+
+          lab.textContent = row.label;
+
+          const bar = document.createElement("div");
+
+          bar.className = "bar-MATDE";
+
+          bar.setAttribute("role", "group");
+
+          row.cells.forEach((cell) => {
+            const block = document.createElement("button");
+
+            block.type = "button";
+
+            block.className = "field-block-MATDE";
+
+            block.dataset.row = row.key;
+
+            block.dataset.col = cell.col;
+
+            block.setAttribute("aria-pressed", "false");
+
+            block.setAttribute(
+              "aria-label",
+
+              `${row.label}, ${cell.col}: ${cell.value} ${cell.value === 1 ? "Technologie" : "Technologien"}`,
+            );
+
+            for (let i = 0; i < cell.value; i++) {
+              const tile = document.createElement("span");
+
+              tile.className = "tile-MATDE";
+
+              tile.style.setProperty("--c", COLORS_MATDE[cell.col]);
+
+              tile.setAttribute("aria-hidden", "true");
+
+              block.appendChild(tile);
+            }
+
+            block.onclick = () => selectCombo_MATDE(row.key, cell.col);
+
+            block.onmouseenter = (e) =>
+              showTip_MATDE(e.currentTarget, row, cell);
+
+            block.onmouseleave = hideTip_MATDE;
+
+            block.onfocus = (e) => showTip_MATDE(e.currentTarget, row, cell);
+
+            block.onblur = hideTip_MATDE;
+
+            block.onkeydown = onBlockKey_MATDE;
+
+            bar.appendChild(block);
+          });
+
+          const total = document.createElement("div");
+
+          total.className = "row-total-MATDE";
+
+          r.append(lab, bar, total);
+
+          el_MATDE.chart.appendChild(r);
+        });
+
+        applyState_MATDE();
+      }
+
+      function selectCombo_MATDE(row, col) {
+        state_MATDE.selected =
+          state_MATDE.selected?.row === row && state_MATDE.selected?.col === col
+            ? null
+            : { row, col };
+
+        applyState_MATDE();
+
+        renderDetail_MATDE();
+        // Kein automatisches Scrollen nach einer Auswahl.
+      }
+
+      function applyState_MATDE() {
+        const sel = state_MATDE.selected;
+
+        el_MATDE.chart.classList.toggle("has-selection-MATDE", !!sel);
+
+        el_MATDE.reset.hidden =
+          !sel && state_MATDE.active.size === state_MATDE.cols.length;
+
+        el_MATDE.chart.querySelectorAll(".row-MATDE").forEach((r) => {
+          let visible = 0,
+            hit = false;
+
+          r.querySelectorAll(".field-block-MATDE").forEach((b) => {
+            const off = !state_MATDE.active.has(b.dataset.col);
+
+            b.classList.toggle("is-off-MATDE", off);
+
+            const count = b.querySelectorAll(".tile-MATDE").length;
+
+            if (!off) visible += count;
+
+            const match =
+              !!sel &&
+              sel.row === b.dataset.row &&
+              sel.col === b.dataset.col &&
+              !off;
+
+            b.classList.toggle("is-match-MATDE", match);
+
+            b.setAttribute("aria-pressed", String(match));
+
+            if (match) hit = true;
+          });
+
+          r.querySelector(".row-total-MATDE").textContent = visible;
+
+          r.classList.toggle("is-hit-MATDE", hit);
+
+          r.classList.toggle("is-empty-MATDE", visible === 0);
+
+          r.querySelector(".bar-MATDE").setAttribute(
+            "aria-label",
+
+            `${r.querySelector(".row-label-MATDE").textContent}: ${visible} Technologien`,
+          );
+        });
+      }
+
+      function renderDetail_MATDE() {
+        const sel = state_MATDE.selected;
+
+        if (!sel) {
+          el_MATDE.detail.innerHTML =
+            //"<h2>Weiterführende Infos</h2><h3>Forschungsfeld wählen</h3><p>Klicken Sie in einer Industrieklasse auf einen farbigen Block. Hier erscheinen danach alle Technologien dieser Kombination mit direkten Links zu den Technologieprofilen.</p>";
+
+            "<h3>Technologien wählen</h3><p>Klicken Sie in einer Industrieklasse auf einen farbigen Block, um mehr über die relevanten Technologien in dieser Industrieklasse zu erfahren.</p>";
+
+          return;
+        }
+
+        const row = state_MATDE.rows.find((r) => r.key === sel.row);
+
+        const cell = row?.cells.find((c) => c.col === sel.col);
+
+        if (!row || !cell) return;
+
+        const n = cell.ids.length;
+
+        const noun = n === 1 ? "Technologie" : "Technologien";
+
+        const verb = n === 1 ? "wird" : "werden";
+
+        const list = cell.ids
+
+          .map((id) => {
+            const t = state_MATDE.techs[id] || {};
+
+            const label = esc_MATDE(t.label_DE || id);
+
+            return `<li>${t.url_DE ? `<a href="${esc_MATDE(t.url_DE)}" target="_blank" rel="noopener noreferrer">${label}</a>` : label}</li>`;
+          })
+
+          .join("");
+
+        // el_MATDE.detail.innerHTML = `<h2>Weiterführende Infos</h2><h3>${esc_MATDE(row.label)} × ${esc_MATDE(cell.col)}</h3><span class="field-badge-MATDE" style="--c:${COLORS_MATDE[cell.col]}"><span class="swatch-MATDE"></span>${esc_MATDE(cell.col)}</span><p>Für die Industrieklasse «${esc_MATDE(row.label)}» ${verb} <strong>${n} ${noun}</strong> aus dem Forschungsfeld «${esc_MATDE(cell.col)}» als relevant erachtet:</p><ul class="tech-list-MATDE">${list}</ul>`;
+
+        el_MATDE.detail.innerHTML = `<h3>Weiterführende Infos</h3><p>Für die Industrieklasse «${esc_MATDE(row.label)}» ${verb} <strong>${n} ${noun}</strong> aus dem Forschungsfeld «${esc_MATDE(cell.col)}» als relevant erachtet:</p><ul class="tech-list-MATDE">${list}</ul><p>Klicken Sie auf eine nächste Kachel.</p>`;
+      }
+
+      function showTip_MATDE(block, row, cell) {
+        const cr = el_MATDE.tip.offsetParent.getBoundingClientRect(),
+          br = block.getBoundingClientRect();
+
+        el_MATDE.tip.innerHTML = `${esc_MATDE(row.label)}<span>${esc_MATDE(cell.col)} · ${cell.value} ${cell.value === 1 ? "Technologie" : "Technologien"}</span>`;
+
+        el_MATDE.tip.style.left = br.left - cr.left + br.width / 2 + "px";
+
+        el_MATDE.tip.style.top = br.top - cr.top - 8 + "px";
+
+        el_MATDE.tip.classList.add("is-on-MATDE");
+      }
+
+      function hideTip_MATDE() {
+        el_MATDE.tip.classList.remove("is-on-MATDE");
+      }
+
+      function onBlockKey_MATDE(e) {
+        if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
+
+        e.preventDefault();
+
+        const blocks = [
+          ...e.currentTarget.parentElement.querySelectorAll(
+            ".field-block-MATDE:not(.is-off-MATDE)",
+          ),
+        ];
+
+        let i = blocks.indexOf(e.currentTarget);
+
+        if (e.key === "ArrowLeft") i = Math.max(0, i - 1);
+
+        if (e.key === "ArrowRight") i = Math.min(blocks.length - 1, i + 1);
+
+        if (e.key === "Home") i = 0;
+
+        if (e.key === "End") i = blocks.length - 1;
+
+        blocks[i]?.focus();
+      }
+
+      function reorder_MATDE() {
+        const rows = [...el_MATDE.chart.querySelectorAll(".row-MATDE")];
+
+        const count = (r) =>
+          [...r.querySelectorAll(".field-block-MATDE")]
+
+            .filter((b) => state_MATDE.active.has(b.dataset.col))
+
+            .reduce((n, b) => n + b.querySelectorAll(".tile-MATDE").length, 0);
+
+        rows
+
+          .sort(
+            (a, b) =>
+              count(b) - count(a) ||
+              a
+
+                .querySelector(".row-label-MATDE")
+
+                .textContent.localeCompare(
+                  b.querySelector(".row-label-MATDE").textContent,
+
+                  "de",
+                ),
+          )
+
+          .forEach((r) => el_MATDE.chart.appendChild(r));
+      }
+
+      function clearAll_MATDE() {
+        state_MATDE.selected = null;
+
+        state_MATDE.active = new Set(state_MATDE.cols);
+
+        renderLegend_MATDE();
+
+        reorder_MATDE();
+
+        applyState_MATDE();
+
+        renderDetail_MATDE();
+      }
+
+      el_MATDE.reset.onclick = clearAll_MATDE;
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && state_MATDE.selected) {
+          state_MATDE.selected = null;
+
+          applyState_MATDE();
+
+          renderDetail_MATDE();
+        }
+      });
+
+      async function loadData_MATDE() {
+        const chart = el_MATDE.chart;
+        const notice = document.createElement("p");
+        notice.setAttribute("role", "status");
+        notice.style.cssText = "font-size:0.7em;line-height:1.55;margin:16px 0";
+        notice.textContent = "Daten werden geladen …";
+        chart.appendChild(notice);
+
+        try {
+          const res = await fetch(DATA_URL_MATDE, { cache: "no-store" });
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const data = await res.json();
+          if (!data || !Array.isArray(data.rows) || !Array.isArray(data.cols) ||
+              !Array.isArray(data.cells) || !data.technologies ||
+              typeof data.technologies !== "object") {
+            throw new Error("Ungültiges Datenformat");
+          }
+          notice.remove();
+          build_MATDE(data);
+        } catch (err) {
+          console.error("SATW Technology Outlook: JSON konnte nicht geladen werden:", err);
+          notice.textContent = "Die Grafikdaten konnten nicht geladen werden. Bitte die JSON-URL und die Browserkonsole prüfen.";
+        }
+      }
+
+      loadData_MATDE();
+    
+})();
+</script>

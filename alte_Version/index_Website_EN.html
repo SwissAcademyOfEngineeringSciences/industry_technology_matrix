@@ -1,0 +1,998 @@
+<!-- SATW Technology Outlook: isoliertes Embed-Widget -->
+<style>
+
+      /* Einbettungs-Schutz: keine Auswirkungen auf die restliche Website. */
+      #satw-techoutlook-MATEN,
+      #satw-techoutlook-MATEN *,
+      #satw-techoutlook-MATEN *::before,
+      #satw-techoutlook-MATEN *::after {
+        box-sizing: border-box;
+      }
+      #satw-techoutlook-MATEN {
+        width: 100%;
+        max-width: 1320px;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: normal;
+        text-transform: none;
+        color: #1d1d1b;
+        background: transparent;
+      }
+      #satw-techoutlook-MATEN button {
+        font-family: inherit;
+        line-height: normal;
+        letter-spacing: normal;
+        text-transform: none;
+        box-shadow: none;
+        min-height: 0;
+        min-width: 0;
+      }
+      #satw-techoutlook-MATEN [hidden] { display: none !important; }
+      #satw-techoutlook-MATEN h1,
+      #satw-techoutlook-MATEN h2,
+      #satw-techoutlook-MATEN h3,
+      #satw-techoutlook-MATEN p {
+        font-family: inherit;
+        letter-spacing: normal;
+        text-transform: none;
+      }
+
+      #satw-techoutlook-MATEN {
+        --paper: #f7f5f0;
+        --ink: #1d1d1b;
+        --muted: #706f6b;
+        --line: #d8d5cd;
+        --accent: #c61010;
+        --digital: #c61010;
+        --energie: #52007e;
+        --fertigung: #9f0c90;
+        --life: #e07317;
+        --tile: 16px;
+        --gap: 5px;
+        --group-gap: 0px;
+        --label-w: 12vw;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      #satw-techoutlook-MATEN.wrap-MATEN {
+        max-width: 1320px;
+        margin: auto;
+        padding: 42px 30px 36px;
+      }
+
+      #satw-techoutlook-MATEN h1 {
+        font-size: 1em;
+        line-height: 1.03;
+        max-width: 950px;
+        margin: 0 0 18px;
+        font-weight: 650;
+      }
+
+      #satw-techoutlook-MATEN .lede-MATEN {
+        max-width: 900px;
+        font-size: 0.7em;
+        line-height: 1.55;
+        margin: 0 0 28px;
+        color: #3f3e3a;
+      }
+
+      #satw-techoutlook-MATEN .controls-MATEN {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0 0 24px;
+      }
+
+      #satw-techoutlook-MATEN .controls-label-MATEN {
+        font-size: 0.7em;
+        font-weight: 700;
+        margin-right: 4px;
+      }
+
+      #satw-techoutlook-MATEN .chip-MATEN,
+      #satw-techoutlook-MATEN .reset-MATEN {
+        font: inherit;
+        font-size: 0.7em;
+        border: 1px solid var(--line);
+        background: transparent;
+        padding: 7px 10px;
+        border-radius: 999px;
+        cursor: pointer;
+      }
+
+      #satw-techoutlook-MATEN .chip-MATEN {
+        display: inline-flex;
+        gap: 7px;
+        align-items: center;
+      }
+
+      #satw-techoutlook-MATEN .chip-MATEN:before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 2px;
+        background: var(--c);
+      }
+
+      #satw-techoutlook-MATEN .chip-MATEN[aria-pressed="false"] {
+        opacity: 0.38;
+      }
+
+      #satw-techoutlook-MATEN .reset-MATEN {
+        margin-left: auto;
+        border-color: #aaa;
+      }
+
+      #satw-techoutlook-MATEN .layout-MATEN {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 180px;
+        gap: 38px;
+        align-items: start;
+      }
+
+      #satw-techoutlook-MATEN .chart-MATEN {
+        position: relative;
+        min-width: 0;
+      }
+
+      #satw-techoutlook-MATEN .technology-axis-label-MATEN {
+        position: absolute;
+        top: -1.5em;
+        right: 0;
+        font-size: 0.7em;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+        text-align: right;
+      }
+
+      #satw-techoutlook-MATEN .row-MATEN {
+        display: grid;
+        grid-template-columns: var(--label-w) minmax(0, 1fr) 3rem;
+        align-items: center;
+        gap: 14px;
+        padding: 6px 0;
+        border-bottom: 1px solid var(--line);
+        transition: transform 0.3s;
+      }
+
+      #satw-techoutlook-MATEN .row-MATEN:first-of-type {
+        border-top: 1px solid var(--line);
+      }
+
+      #satw-techoutlook-MATEN .row-label-MATEN {
+        font-size: 0.7em;
+        text-align: right;
+      }
+
+      #satw-techoutlook-MATEN .row-MATEN.is-hit-MATEN .row-label-MATEN {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      #satw-techoutlook-MATEN .row-MATEN.is-empty-MATEN .row-label-MATEN {
+        color: var(--muted);
+      }
+
+      #satw-techoutlook-MATEN .bar-MATEN {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px var(--group-gap);
+        min-width: 0;
+      }
+
+      #satw-techoutlook-MATEN .field-block-MATEN {
+        display: inline-flex;
+        gap: var(--gap);
+        align-items: center;
+        padding: 4px;
+        border: 0;
+        background: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        transition:
+          opacity 0.18s,
+          transform 0.18s,
+          box-shadow 0.18s;
+      }
+
+      /* Desktop: Hover hebt die Kachel leicht an und zeigt einen grauen Rahmen. */
+      @media (hover: hover) and (pointer: fine) {
+        #satw-techoutlook-MATEN .field-block-MATEN:hover {
+          transform: translateY(-1px);
+          box-shadow: 0 0 0 2px rgba(29, 29, 27, 0.25);
+        }
+      }
+
+      #satw-techoutlook-MATEN .field-block-MATEN:focus-visible {
+        outline: 2px solid var(--ink);
+        outline-offset: 2px;
+      }
+
+      #satw-techoutlook-MATEN .tile-MATEN {
+        width: var(--tile);
+        height: var(--tile);
+        flex: none;
+        border-radius: 3px;
+        background: var(--c);
+      }
+
+      #satw-techoutlook-MATEN .chart-MATEN.has-selection-MATEN .field-block-MATEN {
+        opacity: 0.18;
+      }
+
+      #satw-techoutlook-MATEN .chart-MATEN.has-selection-MATEN .field-block-MATEN.is-match-MATEN {
+        opacity: 1;
+
+        box-shadow: 0 0 0 2px var(--ink);
+      }
+
+      #satw-techoutlook-MATEN .field-block-MATEN.is-off-MATEN {
+        opacity: 0.08;
+        pointer-events: none;
+      }
+
+      #satw-techoutlook-MATEN .row-total-MATEN {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.7em;
+        color: var(--muted);
+        text-align: right;
+      }
+
+      #satw-techoutlook-MATEN .detail-MATEN {
+        border-top: 3px solid var(--ink);
+        padding-top: 18px;
+        position: sticky;
+        top: 24px;
+        min-height: 250px;
+      }
+
+      #satw-techoutlook-MATEN .detail-MATEN h2 {
+        font-size: 0.7em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+        margin: 0 0 22px;
+      }
+
+      #satw-techoutlook-MATEN .detail-MATEN h3 {
+        font-size: 0.7em;
+        line-height: 1.15;
+        margin: 0 0 12px;
+      }
+
+      #satw-techoutlook-MATEN .detail-MATEN p {
+  font-size: 0.7em;
+  line-height: 1.55;
+}
+
+      #satw-techoutlook-MATEN .field-badge-MATEN {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 0.7em;
+        margin-bottom: 8px;
+      }
+
+      #satw-techoutlook-MATEN .swatch-MATEN {
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        background: var(--c);
+      }
+
+      #satw-techoutlook-MATEN .tech-list-MATEN {
+        padding-left: 20px;
+        margin: 14px 0 0;
+      }
+
+      #satw-techoutlook-MATEN .tech-list-MATEN {
+  font-size: 0.7em;
+  padding-left: 20px;
+  margin: 14px 0 0;
+}
+
+      #satw-techoutlook-MATEN .tech-list-MATEN li {
+  font-size: inherit;
+  line-height: 1.35;
+  margin: 0 0 9px;
+}
+
+      #satw-techoutlook-MATEN .tech-list-MATEN a {
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--ink);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+      #satw-techoutlook-MATEN .tech-list-MATEN a:hover {
+        color: var(--accent);
+      }
+
+      #satw-techoutlook-MATEN .tip-MATEN {
+        position: absolute;
+        z-index: 10;
+        transform: translate(-50%, -100%);
+        background: var(--ink);
+        color: #fff;
+        padding: 7px 9px;
+        border-radius: 4px;
+        font-size: 0.7em;
+        line-height: 1.3;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.12s;
+        white-space: nowrap;
+      }
+
+      #satw-techoutlook-MATEN .tip-MATEN.is-on-MATEN {
+        opacity: 1;
+      }
+
+      #satw-techoutlook-MATEN .tip-MATEN span {
+        display: block;
+        color: #d8d5cd;
+      }
+
+/* Tooltip auf Smartphones und Touch-Geräten ausblenden */
+
+      @media (hover: none) and (pointer: coarse) {
+      #satw-techoutlook-MATEN .tip-MATEN {
+    display: none !important;
+  }
+      }
+
+      #satw-techoutlook-MATEN .notes-MATEN {
+  border-top: 1px solid var(--line);
+  margin-top: 34px;
+  padding-top: 16px;
+  font-size: 0.7em;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+      #satw-techoutlook-MATEN .notes-MATEN p {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: normal;
+}
+
+      #satw-techoutlook-MATEN .notes-MATEN a {
+        color: inherit;
+      }
+
+      #satw-techoutlook-MATEN .empty-MATEN {
+        color: var(--muted);
+      }
+
+      @media (max-width: 1050px) {
+      #satw-techoutlook-MATEN .layout-MATEN {
+          grid-template-columns: 1fr;
+        }
+
+      #satw-techoutlook-MATEN .detail-MATEN {
+          position: static;
+        }
+
+      #satw-techoutlook-MATEN.wrap-MATEN {
+          padding: 30px 20px;
+        }
+      }
+
+      @media (max-width: 680px) {
+      #satw-techoutlook-MATEN {
+          --label-w: 96px;
+          --tile: 10px;
+          --gap: 2px;
+          --group-gap: 0px;
+        }
+
+      #satw-techoutlook-MATEN.wrap-MATEN {
+          padding: 24px 12px;
+        }
+
+      #satw-techoutlook-MATEN .row-MATEN {
+          grid-template-columns: 96px minmax(0, 1fr) 1.5rem;
+          gap: 5px;
+           padding: 4px 0;
+        }
+
+      #satw-techoutlook-MATEN .field-block-MATEN {
+          padding: 2px;
+        }
+
+      #satw-techoutlook-MATEN .layout-MATEN {
+          gap: 25px;
+        }
+
+      #satw-techoutlook-MATEN .reset-MATEN {
+          margin-left: 0;
+        }
+      }
+
+      #satw-techoutlook-MATEN .chart-area-MATEN {
+        display: grid;
+        grid-template-columns: 18px minmax(0, 1fr);
+        align-items: stretch;
+        gap: 8px;
+      }
+
+      #satw-techoutlook-MATEN .industry-axis-label-MATEN {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 0.7em;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      @media (max-width: 700px) {
+      #satw-techoutlook-MATEN .legend-MATEN {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    align-items: stretch;
+  }
+
+      #satw-techoutlook-MATEN .legend-MATEN button {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    white-space: normal;
+    text-align: left;
+    overflow-wrap: break-word;
+    line-height: 1.3;
+  }
+      }
+
+/* Ausgewählt: schwarzer Einzelrahmen, auch bei Hover; kein doppelter Fokusrahmen. */
+#satw-techoutlook-MATEN .chart-MATEN.has-selection-MATEN .field-block-MATEN.is-match-MATEN:hover { box-shadow: 0 0 0 2px var(--ink); }
+#satw-techoutlook-MATEN .chart-MATEN.has-selection-MATEN .field-block-MATEN.is-match-MATEN:focus-visible { outline: none; }
+/* Touch: keine Hover-Animation oder graue Hover-Kontur. */
+@media (hover: none), (pointer: coarse) {
+  #satw-techoutlook-MATEN .field-block-MATEN:hover { transform: none; box-shadow: none; }
+  #satw-techoutlook-MATEN .chart-MATEN.has-selection-MATEN .field-block-MATEN.is-match-MATEN:hover { box-shadow: 0 0 0 2px var(--ink); }
+}
+@media (max-width: 680px) {
+  #satw-techoutlook-MATEN .bar-MATEN { column-gap: 0; row-gap: 3px; }
+  #satw-techoutlook-MATEN .tile-MATEN { border-radius: 2px; }
+  #satw-techoutlook-MATEN .field-block-MATEN { min-width: max-content; min-height: 0; line-height: 1; }
+}
+</style>
+<div class="wrap-MATEN" id="satw-techoutlook-MATEN">
+      <h1>
+        Welche Industrieklassen von zukunftsträchtigen Technologien profitieren
+      </h1>
+
+      <p class="lede-MATEN">
+        Jede Zeile entspricht einer Industrieklasse. Die darin abgebildeten
+        Rechtecke stehen für einzelne Technologien, die für diese
+        Industrieklasse. Rechtecke gleicher Farbe gehören zum selben
+        Forschungsfeld.&#x20;
+      </p>
+
+      <p class="lede-MATEN">
+        &#x20; Klicken Sie auf einen farbigen Block, um die zugehörigen
+        Technologien kennenzulernen.
+      </p>
+
+      <div class="controls-MATEN">
+        <span class="controls-label-MATEN" id="filter-label-MATEN"
+          >Forschungsfelder:</span
+        >
+        <div
+          id="legend-MATEN"
+          role="group"
+          aria-labelledby="filter-label-MATEN"
+          style="display: contents"
+        ></div>
+
+        <button class="reset-MATEN" id="reset-MATEN" hidden>
+          Auswahl aufheben
+        </button>
+      </div>
+
+      <div class="layout-MATEN">
+        <div class="chart-area-MATEN">
+          <div class="industry-axis-label-MATEN">Industrieklassen</div>
+
+          <div class="chart-MATEN" id="chart-MATEN">
+            <div class="technology-axis-label-MATEN">Anzahl Technologien</div>
+          </div>
+
+          <div class="tip-MATEN" id="tip-MATEN" aria-hidden="true"></div>
+        </div>
+
+        <aside
+          class="detail-MATEN"
+          id="detail-MATEN"
+          aria-live="polite"
+        ></aside>
+      </div>
+
+      <div class="notes-MATEN">
+        <p>
+          Quelle: Eigene Darstellung. Zur Methodik vgl.
+
+          <a
+            href="https://technology-outlook.satw.ch/en/more-on-the-technology-outlook"
+            target="_blank"
+            rel="noopener noreferrer"
+            >hier</a
+          >.
+        </p>
+      </div>
+    </div>
+<script>
+(function () {
+
+      // HIER die vollständige GitHack-CDN-URL deiner JSON-Datei eintragen.
+      // Beispiel: https://rawcdn.githack.com/USERNAME/REPOSITORY/COMMIT/data.json
+      const DATA_URL_MATEN = "https://raw.githack.com/SwissAcademyOfEngineeringSciences/industry_technology_matrix/main/data.json";
+
+      const COLORS_MATEN = {
+        "Digitale Welt": "var(--digital)",
+
+        "Energie & Umwelt": "var(--energie)",
+
+        "Fertigungsprozesse & Materialien": "var(--fertigung)",
+
+        "Life Sciences": "var(--life)",
+      };
+
+      const state_MATEN = {
+        data: null,
+
+        rows: [],
+
+        cols: [],
+
+        techs: {},
+
+        active: new Set(),
+
+        selected: null,
+      };
+
+      const el_MATEN = {
+        chart: document.getElementById("chart-MATEN"),
+
+        legend: document.getElementById("legend-MATEN"),
+
+        detail: document.getElementById("detail-MATEN"),
+
+        reset: document.getElementById("reset-MATEN"),
+
+        tip: document.getElementById("tip-MATEN"),
+      };
+
+      const esc_MATEN = (s) =>
+        String(s ?? "").replace(
+          /[&<>"']/g,
+
+          (c) =>
+            ({
+              "&": "&amp;",
+
+              "<": "&lt;",
+
+              ">": "&gt;",
+
+              '"': "&quot;",
+
+              "'": "&#39;",
+            })[c],
+        );
+
+      function build_MATEN(data) {
+        state_MATEN.data = data;
+
+        state_MATEN.cols = [...data.cols_EN];
+
+        state_MATEN.techs = data.technologies || {};
+
+        if (!state_MATEN.active.size)
+          state_MATEN.active = new Set(state_MATEN.cols);
+
+        state_MATEN.rows = data.rows_EN
+
+          .map((key) => {
+            const cells = state_MATEN.cols
+
+              .map((col) => {
+                const raw = data.cells.find(
+                  (c) => c.row === key && c.col === col,
+                );
+
+                const ids = (raw?.techIDs || []).filter(
+                  (id) => id && state_MATEN.techs[id],
+                );
+
+                return { row: key, col, ids, value: ids.length };
+              })
+
+              .filter((c) => c.value > 0);
+
+            return {
+              key,
+
+              label: key,
+
+              cells,
+
+              total: cells.reduce((n, c) => n + c.value, 0),
+            };
+          })
+
+          .sort(
+            (a, b) => b.total - a.total || a.label.localeCompare(b.label, "de"),
+          );
+
+        renderLegend_MATEN();
+
+        renderChart_MATEN();
+
+        renderDetail_MATEN();
+      }
+
+      function renderLegend_MATEN() {
+        el_MATEN.legend.innerHTML = "";
+
+        state_MATEN.cols.forEach((col) => {
+          const b = document.createElement("button");
+
+          b.type = "button";
+
+          b.className = "chip-MATEN";
+
+          b.style.setProperty("--c", COLORS_MATEN[col]);
+
+          b.textContent = col;
+
+          b.setAttribute("aria-pressed", String(state_MATEN.active.has(col)));
+
+          b.onclick = () => toggleField_MATEN(col);
+
+          el_MATEN.legend.appendChild(b);
+        });
+      }
+
+      function toggleField_MATEN(col) {
+        state_MATEN.active.has(col)
+          ? state_MATEN.active.delete(col)
+          : state_MATEN.active.add(col);
+
+        if (!state_MATEN.active.size) state_MATEN.active.add(col);
+
+        if (
+          state_MATEN.selected &&
+          !state_MATEN.active.has(state_MATEN.selected.col)
+        )
+          state_MATEN.selected = null;
+
+        renderLegend_MATEN();
+
+        reorder_MATEN();
+
+        applyState_MATEN();
+
+        renderDetail_MATEN();
+      }
+
+      function renderChart_MATEN() {
+        el_MATEN.chart
+          .querySelectorAll(".row-MATEN")
+          .forEach((n) => n.remove());
+
+        state_MATEN.rows.forEach((row) => {
+          const r = document.createElement("div");
+
+          r.className = "row-MATEN";
+
+          r.dataset.row = row.key;
+
+          const lab = document.createElement("div");
+
+          lab.className = "row-label-MATEN";
+
+          lab.textContent = row.label;
+
+          const bar = document.createElement("div");
+
+          bar.className = "bar-MATEN";
+
+          bar.setAttribute("role", "group");
+
+          row.cells.forEach((cell) => {
+            const block = document.createElement("button");
+
+            block.type = "button";
+
+            block.className = "field-block-MATEN";
+
+            block.dataset.row = row.key;
+
+            block.dataset.col = cell.col;
+
+            block.setAttribute("aria-pressed", "false");
+
+            block.setAttribute(
+              "aria-label",
+
+              `${row.label}, ${cell.col}: ${cell.value} ${cell.value === 1 ? "Technologie" : "Technologien"}`,
+            );
+
+            for (let i = 0; i < cell.value; i++) {
+              const tile = document.createElement("span");
+
+              tile.className = "tile-MATEN";
+
+              tile.style.setProperty("--c", COLORS_MATEN[cell.col]);
+
+              tile.setAttribute("aria-hidden", "true");
+
+              block.appendChild(tile);
+            }
+
+            block.onclick = () => selectCombo_MATEN(row.key, cell.col);
+
+            block.onmouseenter = (e) =>
+              showTip_MATEN(e.currentTarget, row, cell);
+
+            block.onmouseleave = hideTip_MATEN;
+
+            block.onfocus = (e) => showTip_MATEN(e.currentTarget, row, cell);
+
+            block.onblur = hideTip_MATEN;
+
+            block.onkeydown = onBlockKey_MATEN;
+
+            bar.appendChild(block);
+          });
+
+          const total = document.createElement("div");
+
+          total.className = "row-total-MATEN";
+
+          r.append(lab, bar, total);
+
+          el_MATEN.chart.appendChild(r);
+        });
+
+        applyState_MATEN();
+      }
+
+      function selectCombo_MATEN(row, col) {
+        state_MATEN.selected =
+          state_MATEN.selected?.row === row && state_MATEN.selected?.col === col
+            ? null
+            : { row, col };
+
+        applyState_MATEN();
+
+        renderDetail_MATEN();
+        // Kein automatisches Scrollen nach einer Auswahl.
+      }
+
+      function applyState_MATEN() {
+        const sel = state_MATEN.selected;
+
+        el_MATEN.chart.classList.toggle("has-selection-MATEN", !!sel);
+
+        el_MATEN.reset.hidden =
+          !sel && state_MATEN.active.size === state_MATEN.cols.length;
+
+        el_MATEN.chart.querySelectorAll(".row-MATEN").forEach((r) => {
+          let visible = 0,
+            hit = false;
+
+          r.querySelectorAll(".field-block-MATEN").forEach((b) => {
+            const off = !state_MATEN.active.has(b.dataset.col);
+
+            b.classList.toggle("is-off-MATEN", off);
+
+            const count = b.querySelectorAll(".tile-MATEN").length;
+
+            if (!off) visible += count;
+
+            const match =
+              !!sel &&
+              sel.row === b.dataset.row &&
+              sel.col === b.dataset.col &&
+              !off;
+
+            b.classList.toggle("is-match-MATEN", match);
+
+            b.setAttribute("aria-pressed", String(match));
+
+            if (match) hit = true;
+          });
+
+          r.querySelector(".row-total-MATEN").textContent = visible;
+
+          r.classList.toggle("is-hit-MATEN", hit);
+
+          r.classList.toggle("is-empty-MATEN", visible === 0);
+
+          r.querySelector(".bar-MATEN").setAttribute(
+            "aria-label",
+
+            `${r.querySelector(".row-label-MATEN").textContent}: ${visible} Technologien`,
+          );
+        });
+      }
+
+      function renderDetail_MATEN() {
+        const sel = state_MATEN.selected;
+
+        if (!sel) {
+          el_MATEN.detail.innerHTML =
+            //"<h2>Weiterführende Infos</h2><h3>Forschungsfeld wählen</h3><p>Klicken Sie in einer Industrieklasse auf einen farbigen Block. Hier erscheinen danach alle Technologien dieser Kombination mit direkten Links zu den Technologieprofilen.</p>";
+
+            "<h3>Technologien wählen</h3><p>Klicken Sie in einer Industrieklasse auf einen farbigen Block, um mehr über die relevanten Technologien in dieser Industrieklasse zu erfahren.</p>";
+
+          return;
+        }
+
+        const row = state_MATEN.rows.find((r) => r.key === sel.row);
+
+        const cell = row?.cells.find((c) => c.col === sel.col);
+
+        if (!row || !cell) return;
+
+        const n = cell.ids.length;
+
+        const noun = n === 1 ? "Technologie" : "Technologien";
+
+        const verb = n === 1 ? "wird" : "werden";
+
+        const list = cell.ids
+
+          .map((id) => {
+            const t = state_MATEN.techs[id] || {};
+
+            const label = esc_MATEN(t.label_EN || id);
+
+            return `<li>${t.url_EN ? `<a href="${esc_MATEN(t.url_EN)}" target="_blank" rel="noopener noreferrer">${label}</a>` : label}</li>`;
+          })
+
+          .join("");
+
+        // el_MATEN.detail.innerHTML = `<h2>Weiterführende Infos</h2><h3>${esc_MATEN(row.label)} × ${esc_MATEN(cell.col)}</h3><span class="field-badge-MATEN" style="--c:${COLORS_MATEN[cell.col]}"><span class="swatch-MATEN"></span>${esc_MATEN(cell.col)}</span><p>Für die Industrieklasse «${esc_MATEN(row.label)}» ${verb} <strong>${n} ${noun}</strong> aus dem Forschungsfeld «${esc_MATEN(cell.col)}» als relevant erachtet:</p><ul class="tech-list-MATEN">${list}</ul>`;
+
+        el_MATEN.detail.innerHTML = `<h3>Weiterführende Infos</h3><p>Für die Industrieklasse «${esc_MATEN(row.label)}» ${verb} <strong>${n} ${noun}</strong> aus dem Forschungsfeld «${esc_MATEN(cell.col)}» als relevant erachtet:</p><ul class="tech-list-MATEN">${list}</ul><p>Klicken Sie auf eine nächste Kachel.</p>`;
+      }
+
+      function showTip_MATEN(block, row, cell) {
+        const cr = el_MATEN.tip.offsetParent.getBoundingClientRect(),
+          br = block.getBoundingClientRect();
+
+        el_MATEN.tip.innerHTML = `${esc_MATEN(row.label)}<span>${esc_MATEN(cell.col)} · ${cell.value} ${cell.value === 1 ? "Technologie" : "Technologien"}</span>`;
+
+        el_MATEN.tip.style.left = br.left - cr.left + br.width / 2 + "px";
+
+        el_MATEN.tip.style.top = br.top - cr.top - 8 + "px";
+
+        el_MATEN.tip.classList.add("is-on-MATEN");
+      }
+
+      function hideTip_MATEN() {
+        el_MATEN.tip.classList.remove("is-on-MATEN");
+      }
+
+      function onBlockKey_MATEN(e) {
+        if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
+
+        e.preventDefault();
+
+        const blocks = [
+          ...e.currentTarget.parentElement.querySelectorAll(
+            ".field-block-MATEN:not(.is-off-MATEN)",
+          ),
+        ];
+
+        let i = blocks.indexOf(e.currentTarget);
+
+        if (e.key === "ArrowLeft") i = Math.max(0, i - 1);
+
+        if (e.key === "ArrowRight") i = Math.min(blocks.length - 1, i + 1);
+
+        if (e.key === "Home") i = 0;
+
+        if (e.key === "End") i = blocks.length - 1;
+
+        blocks[i]?.focus();
+      }
+
+      function reorder_MATEN() {
+        const rows = [...el_MATEN.chart.querySelectorAll(".row-MATEN")];
+
+        const count = (r) =>
+          [...r.querySelectorAll(".field-block-MATEN")]
+
+            .filter((b) => state_MATEN.active.has(b.dataset.col))
+
+            .reduce((n, b) => n + b.querySelectorAll(".tile-MATEN").length, 0);
+
+        rows
+
+          .sort(
+            (a, b) =>
+              count(b) - count(a) ||
+              a
+
+                .querySelector(".row-label-MATEN")
+
+                .textContent.localeCompare(
+                  b.querySelector(".row-label-MATEN").textContent,
+
+                  "de",
+                ),
+          )
+
+          .forEach((r) => el_MATEN.chart.appendChild(r));
+      }
+
+      function clearAll_MATEN() {
+        state_MATEN.selected = null;
+
+        state_MATEN.active = new Set(state_MATEN.cols);
+
+        renderLegend_MATEN();
+
+        reorder_MATEN();
+
+        applyState_MATEN();
+
+        renderDetail_MATEN();
+      }
+
+      el_MATEN.reset.onclick = clearAll_MATEN;
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && state_MATEN.selected) {
+          state_MATEN.selected = null;
+
+          applyState_MATEN();
+
+          renderDetail_MATEN();
+        }
+      });
+
+      async function loadData_MATEN() {
+        const chart = el_MATEN.chart;
+        const notice = document.createElement("p");
+        notice.setAttribute("role", "status");
+        notice.style.cssText = "font-size:0.7em;line-height:1.55;margin:16px 0";
+        notice.textContent = "Daten werden geladen …";
+        chart.appendChild(notice);
+
+        try {
+          const res = await fetch(DATA_URL_MATEN, { cache: "no-store" });
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const data = await res.json();
+          if (!data || !Array.isArray(data.rows_EN) || !Array.isArray(data.cols_EN) ||
+              !Array.isArray(data.cells) || !data.technologies ||
+              typeof data.technologies !== "object") {
+            throw new Error("Ungültiges Datenformat");
+          }
+          notice.remove();
+          build_MATEN(data);
+        } catch (err) {
+          console.error("SATW Technology Outlook: JSON konnte nicht geladen werden:", err);
+          notice.textContent = "Die Grafikdaten konnten nicht geladen werden. Bitte die JSON-URL und die Browserkonsole prüfen.";
+        }
+      }
+
+      loadData_MATEN();
+    
+})();
+</script>

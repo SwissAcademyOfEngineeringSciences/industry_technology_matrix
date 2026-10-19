@@ -1,0 +1,1016 @@
+<!-- SATW Technology Outlook: isoliertes Embed-Widget -->
+<style>
+
+      /* Einbettungs-Schutz: keine Auswirkungen auf die restliche Website. */
+      #satw-techoutlook-MATFR,
+      #satw-techoutlook-MATFR *,
+      #satw-techoutlook-MATFR *::before,
+      #satw-techoutlook-MATFR *::after {
+        box-sizing: border-box;
+      }
+      #satw-techoutlook-MATFR {
+        width: 100%;
+        max-width: 1320px;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: normal;
+        text-transform: none;
+        color: #1d1d1b;
+        background: transparent;
+      }
+      #satw-techoutlook-MATFR button {
+        font-family: inherit;
+        line-height: normal;
+        letter-spacing: normal;
+        text-transform: none;
+        box-shadow: none;
+        min-height: 0;
+        min-width: 0;
+      }
+      #satw-techoutlook-MATFR [hidden] { display: none !important; }
+      #satw-techoutlook-MATFR h1,
+      #satw-techoutlook-MATFR h2,
+      #satw-techoutlook-MATFR h3,
+      #satw-techoutlook-MATFR p {
+        font-family: inherit;
+        letter-spacing: normal;
+        text-transform: none;
+      }
+
+      #satw-techoutlook-MATFR {
+        --paper: #f7f5f0;
+        --ink: #1d1d1b;
+        --muted: #706f6b;
+        --line: #d8d5cd;
+        --accent: #c61010;
+        --digital: #c61010;
+        --energie: #52007e;
+        --fertigung: #9f0c90;
+        --life: #e07317;
+        --tile: 16px;
+        --gap: 5px;
+        --group-gap: 0px;
+        --label-w: 170px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      #satw-techoutlook-MATFR.wrap-MATFR {
+        max-width: 1320px;
+        margin: auto;
+        padding: 42px 30px 36px;
+      }
+
+      #satw-techoutlook-MATFR h1 {
+        font-size: 1em;
+        line-height: 1.03;
+        max-width: 950px;
+        margin: 0 0 18px;
+        font-weight: 650;
+      }
+
+      #satw-techoutlook-MATFR .lede-MATFR {
+        max-width: 900px;
+        font-size: 0.7em;
+        line-height: 1.55;
+        margin: 0 0 28px;
+        color: #3f3e3a;
+      }
+
+      #satw-techoutlook-MATFR .controls-MATFR {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0 0 24px;
+      }
+
+      #satw-techoutlook-MATFR .controls-label-MATFR {
+        font-size: 0.7em;
+        font-weight: 700;
+        margin-right: 4px;
+      }
+
+      #satw-techoutlook-MATFR .chip-MATFR,
+      #satw-techoutlook-MATFR .reset-MATFR {
+        font: inherit;
+        font-size: 0.7em;
+        border: 1px solid var(--line);
+        background: transparent;
+        padding: 7px 10px;
+        border-radius: 999px;
+        cursor: pointer;
+      }
+
+      #satw-techoutlook-MATFR .chip-MATFR {
+        display: inline-flex;
+        gap: 7px;
+        align-items: center;
+      }
+
+      #satw-techoutlook-MATFR .chip-MATFR:before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 2px;
+        background: var(--c);
+      }
+
+      #satw-techoutlook-MATFR .chip-MATFR[aria-pressed="false"] {
+        opacity: 0.38;
+      }
+
+      #satw-techoutlook-MATFR .reset-MATFR {
+        margin-left: auto;
+        border-color: #aaa;
+      }
+
+      #satw-techoutlook-MATFR .layout-MATFR {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 180px;
+        gap: 38px;
+        align-items: start;
+      }
+
+      #satw-techoutlook-MATFR .chart-MATFR {
+        position: relative;
+        min-width: 0;
+      }
+
+      #satw-techoutlook-MATFR .technology-axis-label-MATFR {
+        position: absolute;
+        top: -1.5em;
+        right: 0;
+        font-size: 0.7em;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+        text-align: right;
+      }
+
+      #satw-techoutlook-MATFR .row-MATFR {
+        display: grid;
+        grid-template-columns: var(--label-w) minmax(0, 1fr) 3rem;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 0;
+        border-bottom: 1px solid var(--line);
+        transition: transform 0.3s;
+      }
+
+      #satw-techoutlook-MATFR .row-MATFR:first-of-type {
+        border-top: 1px solid var(--line);
+      }
+
+      #satw-techoutlook-MATFR .row-label-MATFR {
+        font-size: 0.7em;
+        text-align: right;
+      }
+
+      #satw-techoutlook-MATFR .row-MATFR.is-hit-MATFR .row-label-MATFR {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      #satw-techoutlook-MATFR .row-MATFR.is-empty-MATFR .row-label-MATFR {
+        color: var(--muted);
+      }
+
+      #satw-techoutlook-MATFR .bar-MATFR {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px var(--group-gap);
+        min-width: 0;
+      }
+
+      #satw-techoutlook-MATFR .field-block-MATFR {
+        display: inline-flex;
+        gap: var(--gap);
+        align-items: center;
+        padding: 4px;
+        border: 0;
+        background: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        transition:
+          opacity 0.18s,
+          transform 0.18s,
+          box-shadow 0.18s;
+      }
+
+      /* Desktop: Hover hebt die Kachel leicht an und zeigt einen grauen Rahmen. */
+      @media (hover: hover) and (pointer: fine) {
+        #satw-techoutlook-MATFR .field-block-MATFR:hover {
+          transform: translateY(-1px);
+          box-shadow: 0 0 0 2px rgba(29, 29, 27, 0.25);
+        }
+      }
+
+      #satw-techoutlook-MATFR .field-block-MATFR:focus-visible {
+        outline: 2px solid var(--ink);
+        outline-offset: 2px;
+      }
+
+      #satw-techoutlook-MATFR .tile-MATFR {
+        width: var(--tile);
+        height: var(--tile);
+        flex: none;
+        border-radius: 3px;
+        background: var(--c);
+      }
+
+      #satw-techoutlook-MATFR .chart-MATFR.has-selection-MATFR .field-block-MATFR {
+        opacity: 0.18;
+      }
+
+      #satw-techoutlook-MATFR .chart-MATFR.has-selection-MATFR .field-block-MATFR.is-match-MATFR {
+        opacity: 1;
+
+        box-shadow: 0 0 0 2px var(--ink);
+      }
+
+      #satw-techoutlook-MATFR .field-block-MATFR.is-off-MATFR {
+        opacity: 0.08;
+        pointer-events: none;
+      }
+
+      #satw-techoutlook-MATFR .row-total-MATFR {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.7em;
+        color: var(--muted);
+        text-align: right;
+      }
+
+      #satw-techoutlook-MATFR .detail-MATFR {
+        border-top: 3px solid var(--ink);
+        padding-top: 18px;
+        position: sticky;
+        top: 24px;
+        min-height: 250px;
+      }
+
+      #satw-techoutlook-MATFR .detail-MATFR h2 {
+        font-size: 0.7em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+        margin: 0 0 22px;
+      }
+
+      #satw-techoutlook-MATFR .detail-MATFR h3 {
+        font-size: 0.7em;
+        line-height: 1.15;
+        margin: 0 0 12px;
+      }
+
+      #satw-techoutlook-MATFR .detail-MATFR p {
+  font-size: 0.7em;
+  line-height: 1.55;
+}
+
+      #satw-techoutlook-MATFR .field-badge-MATFR {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 0.7em;
+        margin-bottom: 8px;
+      }
+
+      #satw-techoutlook-MATFR .swatch-MATFR {
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        background: var(--c);
+      }
+
+      #satw-techoutlook-MATFR .tech-list-MATFR {
+        padding-left: 20px;
+        margin: 14px 0 0;
+      }
+
+      #satw-techoutlook-MATFR .tech-list-MATFR {
+  font-size: 0.7em;
+  padding-left: 20px;
+  margin: 14px 0 0;
+}
+
+      #satw-techoutlook-MATFR .tech-list-MATFR li {
+  font-size: inherit;
+  line-height: 1.35;
+  margin: 0 0 9px;
+}
+
+      #satw-techoutlook-MATFR .tech-list-MATFR a {
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--ink);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+      #satw-techoutlook-MATFR .tech-list-MATFR a:hover {
+        color: var(--accent);
+      }
+
+      #satw-techoutlook-MATFR .tip-MATFR {
+        position: absolute;
+        z-index: 10;
+        transform: translate(-50%, -100%);
+        background: var(--ink);
+        color: #fff;
+        padding: 7px 9px;
+        border-radius: 4px;
+        font-size: 0.7em;
+        line-height: 1.3;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.12s;
+        white-space: nowrap;
+      }
+
+      #satw-techoutlook-MATFR .tip-MATFR.is-on-MATFR {
+        opacity: 1;
+      }
+
+      #satw-techoutlook-MATFR .tip-MATFR span {
+        display: block;
+        color: #d8d5cd;
+      }
+
+/* Tooltip auf Smartphones und Touch-Geräten ausblenden */
+
+      @media (hover: none) and (pointer: coarse) {
+      #satw-techoutlook-MATFR .tip-MATFR {
+    display: none !important;
+  }
+      }
+
+      #satw-techoutlook-MATFR .notes-MATFR {
+  border-top: 1px solid var(--line);
+  margin-top: 34px;
+  padding-top: 16px;
+  font-size: 0.7em;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+      #satw-techoutlook-MATFR .notes-MATFR p {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: normal;
+}
+
+      #satw-techoutlook-MATFR .notes-MATFR a {
+        color: inherit;
+      }
+
+      #satw-techoutlook-MATFR .empty-MATFR {
+        color: var(--muted);
+      }
+
+      @media (max-width: 1050px) {
+      #satw-techoutlook-MATFR .layout-MATFR {
+          grid-template-columns: 1fr;
+        }
+
+      #satw-techoutlook-MATFR .detail-MATFR {
+          position: static;
+        }
+
+      #satw-techoutlook-MATFR.wrap-MATFR {
+          padding: 30px 20px;
+        }
+      }
+
+      @media (max-width: 680px) {
+      #satw-techoutlook-MATFR {
+          --label-w: 96px;
+          --tile: 10px;
+          --gap: 2px;
+          --group-gap: 0px;
+        }
+
+      #satw-techoutlook-MATFR.wrap-MATFR {
+          padding: 24px 12px;
+        }
+
+      #satw-techoutlook-MATFR .row-MATFR {
+          grid-template-columns: 96px minmax(0, 1fr) 1.5rem;
+          gap: 5px;
+           padding: 4px 0;
+        }
+
+      #satw-techoutlook-MATFR .field-block-MATFR {
+          padding: 2px;
+        }
+
+      #satw-techoutlook-MATFR .layout-MATFR {
+          gap: 25px;
+        }
+
+      #satw-techoutlook-MATFR .reset-MATFR {
+          margin-left: 0;
+        }
+      }
+
+      #satw-techoutlook-MATFR .chart-area-MATFR {
+        display: grid;
+        grid-template-columns: 18px minmax(0, 1fr);
+        align-items: stretch;
+        gap: 8px;
+      }
+
+      #satw-techoutlook-MATFR .industry-axis-label-MATFR {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 0.7em;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      @media (max-width: 700px) {
+      #satw-techoutlook-MATFR .legend-MATFR {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    align-items: stretch;
+  }
+
+      #satw-techoutlook-MATFR .legend-MATFR button {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    white-space: normal;
+    text-align: left;
+    overflow-wrap: break-word;
+    line-height: 1.3;
+  }
+      }
+
+/* Ausgewählt: schwarzer Einzelrahmen, auch bei Hover; kein doppelter Fokusrahmen. */
+#satw-techoutlook-MATFR .chart-MATFR.has-selection-MATFR .field-block-MATFR.is-match-MATFR:hover { box-shadow: 0 0 0 2px var(--ink); }
+#satw-techoutlook-MATFR .chart-MATFR.has-selection-MATFR .field-block-MATFR.is-match-MATFR:focus-visible { outline: none; }
+/* Touch: keine Hover-Animation oder graue Hover-Kontur. */
+@media (hover: none), (pointer: coarse) {
+  #satw-techoutlook-MATFR .field-block-MATFR:hover { transform: none; box-shadow: none; }
+  #satw-techoutlook-MATFR .chart-MATFR.has-selection-MATFR .field-block-MATFR.is-match-MATFR:hover { box-shadow: 0 0 0 2px var(--ink); }
+}
+@media (max-width: 680px) {
+  #satw-techoutlook-MATFR .bar-MATFR { column-gap: 0; row-gap: 3px; }
+  #satw-techoutlook-MATFR .tile-MATFR { border-radius: 2px; }
+  #satw-techoutlook-MATFR .field-block-MATFR { min-width: max-content; min-height: 0; line-height: 1; }
+}
+</style>
+<div class="wrap-MATFR" id="satw-techoutlook-MATFR">
+      <h1>
+        Welche Industrieklassen von zukunftsträchtigen Technologien profitieren
+      </h1>
+
+      <p class="lede-MATFR">
+        Jede Zeile entspricht einer Industrieklasse. Die darin abgebildeten
+        Rechtecke stehen für einzelne Technologien, die für diese
+        Industrieklasse. Rechtecke gleicher Farbe gehören zum selben
+        Forschungsfeld.&#x20;
+      </p>
+
+      <p class="lede-MATFR">
+        &#x20; Klicken Sie auf einen farbigen Block, um die zugehörigen
+        Technologien kennenzulernen.
+      </p>
+
+      <div class="controls-MATFR">
+        <span class="controls-label-MATFR" id="filter-label-MATFR"
+          >Forschungsfelder:</span
+        >
+        <div
+          id="legend-MATFR"
+          role="group"
+          aria-labelledby="filter-label-MATFR"
+          style="display: contents"
+        ></div>
+
+        <button class="reset-MATFR" id="reset-MATFR" hidden>
+          Auswahl aufheben
+        </button>
+      </div>
+
+      <div class="layout-MATFR">
+        <div class="chart-area-MATFR">
+          <div class="industry-axis-label-MATFR">Industrieklassen</div>
+
+          <div class="chart-MATFR" id="chart-MATFR">
+            <div class="technology-axis-label-MATFR">Anzahl Technologien</div>
+          </div>
+
+          <div class="tip-MATFR" id="tip-MATFR" aria-hidden="true"></div>
+        </div>
+
+        <aside
+          class="detail-MATFR"
+          id="detail-MATFR"
+          aria-live="polite"
+        ></aside>
+      </div>
+
+      <div class="notes-MATFR">
+        <p>
+          Quelle: Eigene Darstellung. Zur Methodik vgl.
+
+          <a
+            href="https://technology-outlook.satw.ch/de/mehr-zum-technology-outlook"
+            target="_blank"
+            rel="noopener noreferrer"
+            >hier</a
+          >.
+        </p>
+      </div>
+    </div>
+<script>
+(function () {
+
+      // HIER die vollständige GitHack-CDN-URL deiner JSON-Datei eintragen.
+      // Beispiel: https://rawcdn.githack.com/USERNAME/REPOSITORY/COMMIT/data.json
+      const DATA_URL_MATFR = "https://raw.githack.com/SwissAcademyOfEngineeringSciences/industry_technology_matrix/main/data.json";
+
+      // EINZIGE SPRACHEINSTELLUNG: DE, FR oder EN.
+      const LANG_MATFR = "FR";
+      const LOCALE_MATFR = { DE: "de", FR: "fr", EN: "en" }[LANG_MATFR];
+      const UI_MATFR = {
+        FR: {
+          title: "Quelles branches industrielles bénéficient des technologies d’avenir ?",
+          intro: "Chaque ligne correspond à une branche industrielle. Les carrés représentent les technologies pertinentes pour cette branche. Les carrés de même couleur appartiennent au même domaine de recherche.",
+          instruction: "Cliquez sur un bloc coloré pour découvrir les technologies correspondantes.",
+          fields: "Domaines de recherche :", reset: "Réinitialiser la sélection", industry: "Branches industrielles", count: "Nombre de technologies",
+          source: "Source : représentation propre. Pour la méthodologie, voir", here: "ici", methodology: "https://technology-outlook.satw.ch/fr/translate-to-french-mehr-zum-technology-outlook",
+          one: "technologie", many: "technologies", choose: "Choisir des technologies",
+          empty: "Cliquez sur un bloc coloré dans une branche industrielle pour découvrir les technologies pertinentes.",
+          detailTitle: "Informations complémentaires", detail: (row, col, n) => `Pour la branche «${row}», <strong>${n} ${n === 1 ? "technologie" : "technologies"}</strong> dans le domaine «${col}» ${n === 1 ? "est considérée" : "sont considérées"} comme pertinente${n === 1 ? "" : "s"}:`,
+          next: "Cliquez sur un autre bloc.", loading: "Chargement des données …", error: "Impossible de charger les données. Vérifiez l’URL JSON et la console du navigateur."
+        }
+      }[LANG_MATFR];
+      const COLOR_VALUES_MATFR = ["var(--digital)", "var(--energie)", "var(--fertigung)", "var(--life)"];
+      let COLORS_MATFR = {};
+
+      // Auch sämtliche statischen UI-Texte werden über LANG_MATFR gesteuert.
+      const root_MATFR = document.getElementById("satw-techoutlook-MATFR");
+      root_MATFR.querySelector("h1").textContent = UI_MATFR.title;
+      root_MATFR.querySelectorAll(".lede-MATFR")[0].textContent = UI_MATFR.intro;
+      root_MATFR.querySelectorAll(".lede-MATFR")[1].textContent = UI_MATFR.instruction;
+      root_MATFR.querySelector("#filter-label-MATFR").textContent = UI_MATFR.fields;
+      root_MATFR.querySelector("#reset-MATFR").textContent = UI_MATFR.reset;
+      root_MATFR.querySelector(".industry-axis-label-MATFR").textContent = UI_MATFR.industry;
+      root_MATFR.querySelector(".technology-axis-label-MATFR").textContent = UI_MATFR.count;
+      const source_MATFR = root_MATFR.querySelector(".notes-MATFR p");
+      source_MATFR.replaceChildren(document.createTextNode(UI_MATFR.source + " "));
+      const sourceLink_MATFR = document.createElement("a");
+      sourceLink_MATFR.href = UI_MATFR.methodology;
+      sourceLink_MATFR.target = "_blank";
+      sourceLink_MATFR.rel = "noopener noreferrer";
+      sourceLink_MATFR.textContent = UI_MATFR.here;
+      source_MATFR.append(sourceLink_MATFR, document.createTextNode("."));
+
+      const state_MATFR = {
+        data: null,
+
+        rows: [],
+
+        cols: [],
+
+        techs: {},
+
+        active: new Set(),
+
+        selected: null,
+      };
+
+      const el_MATFR = {
+        chart: document.getElementById("chart-MATFR"),
+
+        legend: document.getElementById("legend-MATFR"),
+
+        detail: document.getElementById("detail-MATFR"),
+
+        reset: document.getElementById("reset-MATFR"),
+
+        tip: document.getElementById("tip-MATFR"),
+      };
+
+      const esc_MATFR = (s) =>
+        String(s ?? "").replace(
+          /[&<>"']/g,
+
+          (c) =>
+            ({
+              "&": "&amp;",
+
+              "<": "&lt;",
+
+              ">": "&gt;",
+
+              '"': "&quot;",
+
+              "'": "&#39;",
+            })[c],
+        );
+
+      function build_MATFR(data) {
+        state_MATFR.data = data;
+
+        state_MATFR.cols = [...data[`cols_${LANG_MATFR}`]];
+        COLORS_MATFR = Object.fromEntries(state_MATFR.cols.map((col, i) => [col, COLOR_VALUES_MATFR[i]]));
+
+        state_MATFR.techs = data.technologies || {};
+
+        if (!state_MATFR.active.size)
+          state_MATFR.active = new Set(state_MATFR.cols);
+
+        state_MATFR.rows = data[`rows_${LANG_MATFR}`]
+
+          .map((key) => {
+            const cells = state_MATFR.cols
+
+              .map((col) => {
+                const raw = data.cells.find(
+                  (c) => c[`row_${LANG_MATFR}`] === key && c[`col_${LANG_MATFR}`] === col,
+                );
+
+                const ids = (raw?.techIDs || []).filter(
+                  (id) => id && state_MATFR.techs[id],
+                );
+
+                return { row: key, col, ids, value: ids.length };
+              })
+
+              .filter((c) => c.value > 0);
+
+            return {
+              key,
+
+              label: key,
+
+              cells,
+
+              total: cells.reduce((n, c) => n + c.value, 0),
+            };
+          })
+
+          .sort(
+            (a, b) => b.total - a.total || a.label.localeCompare(b.label, LOCALE_MATFR),
+          );
+
+        renderLegend_MATFR();
+
+        renderChart_MATFR();
+
+        renderDetail_MATFR();
+      }
+
+      function renderLegend_MATFR() {
+        el_MATFR.legend.innerHTML = "";
+
+        state_MATFR.cols.forEach((col) => {
+          const b = document.createElement("button");
+
+          b.type = "button";
+
+          b.className = "chip-MATFR";
+
+          b.style.setProperty("--c", COLORS_MATFR[col]);
+
+          b.textContent = col;
+
+          b.setAttribute("aria-pressed", String(state_MATFR.active.has(col)));
+
+          b.onclick = () => toggleField_MATFR(col);
+
+          el_MATFR.legend.appendChild(b);
+        });
+      }
+
+      function toggleField_MATFR(col) {
+        state_MATFR.active.has(col)
+          ? state_MATFR.active.delete(col)
+          : state_MATFR.active.add(col);
+
+        if (!state_MATFR.active.size) state_MATFR.active.add(col);
+
+        if (
+          state_MATFR.selected &&
+          !state_MATFR.active.has(state_MATFR.selected.col)
+        )
+          state_MATFR.selected = null;
+
+        renderLegend_MATFR();
+
+        reorder_MATFR();
+
+        applyState_MATFR();
+
+        renderDetail_MATFR();
+      }
+
+      function renderChart_MATFR() {
+        el_MATFR.chart
+          .querySelectorAll(".row-MATFR")
+          .forEach((n) => n.remove());
+
+        state_MATFR.rows.forEach((row) => {
+          const r = document.createElement("div");
+
+          r.className = "row-MATFR";
+
+          r.dataset.row = row.key;
+
+          const lab = document.createElement("div");
+
+          lab.className = "row-label-MATFR";
+
+          lab.textContent = row.label;
+
+          const bar = document.createElement("div");
+
+          bar.className = "bar-MATFR";
+
+          bar.setAttribute("role", "group");
+
+          row.cells.forEach((cell) => {
+            const block = document.createElement("button");
+
+            block.type = "button";
+
+            block.className = "field-block-MATFR";
+
+            block.dataset.row = row.key;
+
+            block.dataset.col = cell.col;
+
+            block.setAttribute("aria-pressed", "false");
+
+            block.setAttribute(
+              "aria-label",
+
+              `${row.label}, ${cell.col}: ${cell.value} ${cell.value === 1 ? UI_MATFR.one : UI_MATFR.many}`,
+            );
+
+            for (let i = 0; i < cell.value; i++) {
+              const tile = document.createElement("span");
+
+              tile.className = "tile-MATFR";
+
+              tile.style.setProperty("--c", COLORS_MATFR[cell.col]);
+
+              tile.setAttribute("aria-hidden", "true");
+
+              block.appendChild(tile);
+            }
+
+            block.onclick = () => selectCombo_MATFR(row.key, cell.col);
+
+            block.onmouseenter = (e) =>
+              showTip_MATFR(e.currentTarget, row, cell);
+
+            block.onmouseleave = hideTip_MATFR;
+
+            block.onfocus = (e) => showTip_MATFR(e.currentTarget, row, cell);
+
+            block.onblur = hideTip_MATFR;
+
+            block.onkeydown = onBlockKey_MATFR;
+
+            bar.appendChild(block);
+          });
+
+          const total = document.createElement("div");
+
+          total.className = "row-total-MATFR";
+
+          r.append(lab, bar, total);
+
+          el_MATFR.chart.appendChild(r);
+        });
+
+        applyState_MATFR();
+      }
+
+      function selectCombo_MATFR(row, col) {
+        state_MATFR.selected =
+          state_MATFR.selected?.row === row && state_MATFR.selected?.col === col
+            ? null
+            : { row, col };
+
+        applyState_MATFR();
+
+        renderDetail_MATFR();
+        // Kein automatisches Scrollen nach einer Auswahl.
+      }
+
+      function applyState_MATFR() {
+        const sel = state_MATFR.selected;
+
+        el_MATFR.chart.classList.toggle("has-selection-MATFR", !!sel);
+
+        el_MATFR.reset.hidden =
+          !sel && state_MATFR.active.size === state_MATFR.cols.length;
+
+        el_MATFR.chart.querySelectorAll(".row-MATFR").forEach((r) => {
+          let visible = 0,
+            hit = false;
+
+          r.querySelectorAll(".field-block-MATFR").forEach((b) => {
+            const off = !state_MATFR.active.has(b.dataset.col);
+
+            b.classList.toggle("is-off-MATFR", off);
+
+            const count = b.querySelectorAll(".tile-MATFR").length;
+
+            if (!off) visible += count;
+
+            const match =
+              !!sel &&
+              sel.row === b.dataset.row &&
+              sel.col === b.dataset.col &&
+              !off;
+
+            b.classList.toggle("is-match-MATFR", match);
+
+            b.setAttribute("aria-pressed", String(match));
+
+            if (match) hit = true;
+          });
+
+          r.querySelector(".row-total-MATFR").textContent = visible;
+
+          r.classList.toggle("is-hit-MATFR", hit);
+
+          r.classList.toggle("is-empty-MATFR", visible === 0);
+
+          r.querySelector(".bar-MATFR").setAttribute(
+            "aria-label",
+
+            `${r.querySelector(".row-label-MATFR").textContent}: ${visible} ${visible === 1 ? UI_MATFR.one : UI_MATFR.many}`,
+          );
+        });
+      }
+
+      function renderDetail_MATFR() {
+        const sel = state_MATFR.selected;
+
+        if (!sel) {
+          el_MATFR.detail.innerHTML = `<h3>${esc_MATFR(UI_MATFR.choose)}</h3><p>${esc_MATFR(UI_MATFR.empty)}</p>`;
+          return;
+        }
+
+        const row = state_MATFR.rows.find((r) => r.key === sel.row);
+
+        const cell = row?.cells.find((c) => c.col === sel.col);
+
+        if (!row || !cell) return;
+
+        const n = cell.ids.length;
+
+        const list = cell.ids
+
+          .map((id) => {
+            const t = state_MATFR.techs[id] || {};
+
+            const label = esc_MATFR(t[`label_${LANG_MATFR}`] || id);
+
+            return `<li>${t[`url_${LANG_MATFR}`] ? `<a href="${esc_MATFR(t[`url_${LANG_MATFR}`])}" target="_blank" rel="noopener noreferrer">${label}</a>` : label}</li>`;
+          })
+
+          .join("");
+
+        el_MATFR.detail.innerHTML = `<h3>${esc_MATFR(UI_MATFR.detailTitle)}</h3><p>${UI_MATFR.detail(esc_MATFR(row.label), esc_MATFR(cell.col), n)}</p><ul class="tech-list-MATFR">${list}</ul><p>${esc_MATFR(UI_MATFR.next)}</p>`;
+      }
+
+      function showTip_MATFR(block, row, cell) {
+        const cr = el_MATFR.tip.offsetParent.getBoundingClientRect(),
+          br = block.getBoundingClientRect();
+
+        el_MATFR.tip.innerHTML = `${esc_MATFR(row.label)}<span>${esc_MATFR(cell.col)} · ${cell.value} ${cell.value === 1 ? UI_MATFR.one : UI_MATFR.many}</span>`;
+
+        el_MATFR.tip.style.left = br.left - cr.left + br.width / 2 + "px";
+
+        el_MATFR.tip.style.top = br.top - cr.top - 8 + "px";
+
+        el_MATFR.tip.classList.add("is-on-MATFR");
+      }
+
+      function hideTip_MATFR() {
+        el_MATFR.tip.classList.remove("is-on-MATFR");
+      }
+
+      function onBlockKey_MATFR(e) {
+        if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
+
+        e.preventDefault();
+
+        const blocks = [
+          ...e.currentTarget.parentElement.querySelectorAll(
+            ".field-block-MATFR:not(.is-off-MATFR)",
+          ),
+        ];
+
+        let i = blocks.indexOf(e.currentTarget);
+
+        if (e.key === "ArrowLeft") i = Math.max(0, i - 1);
+
+        if (e.key === "ArrowRight") i = Math.min(blocks.length - 1, i + 1);
+
+        if (e.key === "Home") i = 0;
+
+        if (e.key === "End") i = blocks.length - 1;
+
+        blocks[i]?.focus();
+      }
+
+      function reorder_MATFR() {
+        const rows = [...el_MATFR.chart.querySelectorAll(".row-MATFR")];
+
+        const count = (r) =>
+          [...r.querySelectorAll(".field-block-MATFR")]
+
+            .filter((b) => state_MATFR.active.has(b.dataset.col))
+
+            .reduce((n, b) => n + b.querySelectorAll(".tile-MATFR").length, 0);
+
+        rows
+
+          .sort(
+            (a, b) =>
+              count(b) - count(a) ||
+              a
+
+                .querySelector(".row-label-MATFR")
+
+                .textContent.localeCompare(
+                  b.querySelector(".row-label-MATFR").textContent,
+
+                  LOCALE_MATFR,
+                ),
+          )
+
+          .forEach((r) => el_MATFR.chart.appendChild(r));
+      }
+
+      function clearAll_MATFR() {
+        state_MATFR.selected = null;
+
+        state_MATFR.active = new Set(state_MATFR.cols);
+
+        renderLegend_MATFR();
+
+        reorder_MATFR();
+
+        applyState_MATFR();
+
+        renderDetail_MATFR();
+      }
+
+      el_MATFR.reset.onclick = clearAll_MATFR;
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && state_MATFR.selected) {
+          state_MATFR.selected = null;
+
+          applyState_MATFR();
+
+          renderDetail_MATFR();
+        }
+      });
+
+      async function loadData_MATFR() {
+        const chart = el_MATFR.chart;
+        const notice = document.createElement("p");
+        notice.setAttribute("role", "status");
+        notice.style.cssText = "font-size:0.7em;line-height:1.55;margin:16px 0";
+        notice.textContent = UI_MATFR.loading;
+        chart.appendChild(notice);
+
+        try {
+          const res = await fetch(DATA_URL_MATFR, { cache: "no-store" });
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const data = await res.json();
+          if (!data || !Array.isArray(data[`rows_${LANG_MATFR}`]) || !Array.isArray(data[`cols_${LANG_MATFR}`]) ||
+              !Array.isArray(data.cells) || !data.technologies ||
+              typeof data.technologies !== "object") {
+            throw new Error("Ungültiges Datenformat");
+          }
+          notice.remove();
+          build_MATFR(data);
+        } catch (err) {
+          console.error("SATW Technology Outlook: JSON konnte nicht geladen werden:", err);
+          notice.textContent = UI_MATFR.error;
+        }
+      }
+
+      loadData_MATFR();
+    
+})();
+</script>
