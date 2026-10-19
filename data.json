@@ -271,29 +271,72 @@
       "url_DE": "https://technology-outlook.satw.ch/de/technologien-im-fokus/wasserstoff"
     }
   },
-  "cols": [
+{
+  "cols_DE": [
     "Digitale Welt",
     "Energie & Umwelt",
     "Fertigungsprozesse & Materialien",
     "Life Sciences"
   ],
-  "rows": [
+  "cols_FR": [
+    "Monde numérique",
+    "Énergie & environnement",
+    "Procédés de fabrication et matériaux",
+    "Sciences de la vie"
+  ],
+  "cols_EN": [
+    "Digital World",
+    "Energy & the environment",
+    "Manufacturing processes & materials",
+    "Life Sciences"
+  ],
+  "rows_DE": [
     "Chemie",
     "Pharma",
     "Elektronik & Instrumente",
     "Elektrotechnik",
     "Fahrzeug- & Maschinenbau",
     "Druck, Holz & Papier",
-    "Enerige, Wasser & Umwelt",
+    "Energie, Wasser & Umwelt",
     "Kunststoffe",
     "Metallverarbeitung",
     "Nahrungsmittel",
     "sonstige Industrien"
   ],
+  "rows_FR": [
+    "Chimie",
+    "Industrie pharmaceutique",
+    "Électronique & instruments",
+    "Électrotechnique",
+    "Construction automobile & mécanique",
+    "Imprimerie, bois & papier",
+    "Énergie, eau & environnement",
+    "Plastiques",
+    "Transformation des métaux",
+    "Agroalimentaire",
+    "Autres industries"
+  ],
+  "rows_EN": [
+    "Chemicals",
+    "Pharmaceuticals",
+    "Electronics & Instruments",
+    "Electrical Engineering",
+    "Automotive & Mechanical Engineering",
+    "Printing, Wood & Paper",
+    "Energy, Water & Environment",
+    "Plastics",
+    "Metalworking",
+    "Food",
+    "Other Industries"
+  ],
   "cells": [
     {
-      "col": "Digitale Welt",
-      "row": "Chemie",
+      "col_DE": "Digitale Welt",
+      "col_FR": "Monde numérique",
+      "col_EN": "Digital World",
+      "row_DE": "Chemie",
+      "row_FR": "Chimie",
+      "row_EN": "Chemicals",
       "value": 2,
       "techIDs": [
         "IOT",
@@ -301,8 +344,12 @@
       ]
     },
     {
-      "col": "Digitale Welt",
-      "row": "Pharma",
+      "col_DE": "Digitale Welt",
+      "col_FR": "Monde numérique",
+      "col_EN": "Digital World",
+      "row_DE": "Pharma",
+      "row_FR": "Industrie pharmaceutique",
+      "row_EN": "Pharmaceuticals",
       "value": 2,
       "techIDs": [
         "IOT",
@@ -310,8 +357,12 @@
       ]
     },
     {
-      "col": "Digitale Welt",
-      "row": "Elektronik & Instrumente",
+      "col_DE": "Digitale Welt",
+      "col_FR": "Monde numérique",
+      "col_EN": "Digital World",
+      "row_DE": "Elektronik & Instrumente",
+      "row_FR": "Électronique & instruments",
+      "row_EN": "Electronics & Instruments",
       "value": 4,
       "techIDs": [
         "Ind50",
@@ -321,8 +372,12 @@
       ]
     },
     {
-      "col": "Digitale Welt",
-      "row": "Elektrotechnik",
+      "col_DE": "Digitale Welt",
+      "col_FR": "Monde numérique",
+      "col_EN": "Digital World",
+      "row_DE": "Elektrotechnik",
+      "row_FR": "Électrotechnique",
+      "row_EN": "Electrical Engineering",
       "value": 3,
       "techIDs": [
         "Ind50",
@@ -331,8 +386,12 @@
       ]
     },
     {
-      "col": "Digitale Welt",
-      "row": "Fahrzeug- & Maschinenbau",
+      "col_DE": "Digitale Welt",
+      "col_FR": "Monde numérique",
+      "col_EN": "Digital World",
+      "row_DE": "Fahrzeug- & Maschinenbau",
+      "row_FR": "Construction automobile & mécanique",
+      "row_EN": "Automotive & Mechanical Engineering",
       "value": 2,
       "techIDs": [
         "Ind50",
@@ -340,16 +399,24 @@
       ]
     },
     {
-      "col": "Digitale Welt",
-      "row": "Druck, Holz & Papier",
+      "col_DE": "Digitale Welt",
+      "col_FR": "Monde numérique",
+      "col_EN": "Digital World",
+      "row_DE": "Druck, Holz & Papier",
+      "row_FR": "Imprimerie, bois & papier",
+      "row_EN": "Printing, Wood & Paper",
       "value": 1,
       "techIDs": [
         "IOT"
       ]
     },
     {
-      "col": "Digitale Welt",
-      "row": "Enerige, Wasser & Umwelt",
+      "col_DE": "Digitale Welt",
+      "col_FR": "Monde numérique",
+      "col_EN": "Digital World",
+      "row_DE": "Energie, Wasser & Umwelt",
+      "row_FR": "Énergie, eau & environnement",
+      "row_EN": "Energy, Water & Environment",
       "value": 3,
       "techIDs": [
         "Ind50",
@@ -358,8 +425,12 @@
       ]
     },
     {
-      "col": "Digitale Welt",
-      "row": "Kunststoffe",
+      "col_DE": "Digitale Welt",
+      "col_FR": "Monde numérique",
+      "col_EN": "Digital World",
+      "row_DE": "Kunststoffe",
+      "row_FR": "Plastiques",
+      "row_EN": "Plastics",
       "value": 2,
       "techIDs": [
         "Ind50",
@@ -367,8 +438,12 @@
       ]
     },
     {
-      "col": "Digitale Welt",
-      "row": "Metallverarbeitung",
+      "col_DE": "Digitale Welt",
+      "col_FR": "Monde numérique",
+      "col_EN": "Digital World",
+      "row_DE": "Metallverarbeitung",
+      "row_FR": "Transformation des métaux",
+      "row_EN": "Metalworking",
       "value": 2,
       "techIDs": [
         "Ind50",
@@ -376,8 +451,12 @@
       ]
     },
     {
-      "col": "Digitale Welt",
-      "row": "Nahrungsmittel",
+      "col_DE": "Digitale Welt",
+      "col_FR": "Monde numérique",
+      "col_EN": "Digital World",
+      "row_DE": "Nahrungsmittel",
+      "row_FR": "Agroalimentaire",
+      "row_EN": "Food",
       "value": 2,
       "techIDs": [
         "Ind50",
@@ -385,8 +464,12 @@
       ]
     },
     {
-      "col": "Digitale Welt",
-      "row": "sonstige Industrien",
+      "col_DE": "Digitale Welt",
+      "col_FR": "Monde numérique",
+      "col_EN": "Digital World",
+      "row_DE": "sonstige Industrien",
+      "row_FR": "Autres industries",
+      "row_EN": "Other Industries",
       "value": 2,
       "techIDs": [
         "Ind50",
@@ -394,8 +477,12 @@
       ]
     },
     {
-      "col": "Energie & Umwelt",
-      "row": "Chemie",
+      "col_DE": "Energie & Umwelt",
+      "col_FR": "Énergie & environnement",
+      "col_EN": "Energy & the environment",
+      "row_DE": "Chemie",
+      "row_FR": "Chimie",
+      "row_EN": "Chemicals",
       "value": 5,
       "techIDs": [
         "KunstPhoto",
@@ -406,8 +493,12 @@
       ]
     },
     {
-      "col": "Energie & Umwelt",
-      "row": "Pharma",
+      "col_DE": "Energie & Umwelt",
+      "col_FR": "Énergie & environnement",
+      "col_EN": "Energy & the environment",
+      "row_DE": "Pharma",
+      "row_FR": "Industrie pharmaceutique",
+      "row_EN": "Pharmaceuticals",
       "value": 2,
       "techIDs": [
         "KunstRecycl",
@@ -415,8 +506,12 @@
       ]
     },
     {
-      "col": "Energie & Umwelt",
-      "row": "Elektronik & Instrumente",
+      "col_DE": "Energie & Umwelt",
+      "col_FR": "Énergie & environnement",
+      "col_EN": "Energy & the environment",
+      "row_DE": "Elektronik & Instrumente",
+      "row_FR": "Électronique & instruments",
+      "row_EN": "Electronics & Instruments",
       "value": 0,
       "techIDs": [
         "",
@@ -424,8 +519,12 @@
       ]
     },
     {
-      "col": "Energie & Umwelt",
-      "row": "Elektrotechnik",
+      "col_DE": "Energie & Umwelt",
+      "col_FR": "Énergie & environnement",
+      "col_EN": "Energy & the environment",
+      "row_DE": "Elektrotechnik",
+      "row_FR": "Électrotechnique",
+      "row_EN": "Electrical Engineering",
       "value": 0,
       "techIDs": [
         "",
@@ -433,24 +532,36 @@
       ]
     },
     {
-      "col": "Energie & Umwelt",
-      "row": "Fahrzeug- & Maschinenbau",
+      "col_DE": "Energie & Umwelt",
+      "col_FR": "Énergie & environnement",
+      "col_EN": "Energy & the environment",
+      "row_DE": "Fahrzeug- & Maschinenbau",
+      "row_FR": "Construction automobile & mécanique",
+      "row_EN": "Automotive & Mechanical Engineering",
       "value": 1,
       "techIDs": [
         "Wasserstoff"
       ]
     },
     {
-      "col": "Energie & Umwelt",
-      "row": "Druck, Holz & Papier",
+      "col_DE": "Energie & Umwelt",
+      "col_FR": "Énergie & environnement",
+      "col_EN": "Energy & the environment",
+      "row_DE": "Druck, Holz & Papier",
+      "row_FR": "Imprimerie, bois & papier",
+      "row_EN": "Printing, Wood & Paper",
       "value": 1,
       "techIDs": [
         "KunstRecycl"
       ]
     },
     {
-      "col": "Energie & Umwelt",
-      "row": "Enerige, Wasser & Umwelt",
+      "col_DE": "Energie & Umwelt",
+      "col_FR": "Énergie & environnement",
+      "col_EN": "Energy & the environment",
+      "row_DE": "Energie, Wasser & Umwelt",
+      "row_FR": "Énergie, eau & environnement",
+      "row_EN": "Energy, Water & Environment",
       "value": 7,
       "techIDs": [
         "KunstPhoto",
@@ -463,22 +574,34 @@
       ]
     },
     {
-      "col": "Energie & Umwelt",
-      "row": "Kunststoffe",
+      "col_DE": "Energie & Umwelt",
+      "col_FR": "Énergie & environnement",
+      "col_EN": "Energy & the environment",
+      "row_DE": "Kunststoffe",
+      "row_FR": "Plastiques",
+      "row_EN": "Plastics",
       "value": 1,
       "techIDs": [
         "KunstRecycl"
       ]
     },
     {
-      "col": "Energie & Umwelt",
-      "row": "Metallverarbeitung",
+      "col_DE": "Energie & Umwelt",
+      "col_FR": "Énergie & environnement",
+      "col_EN": "Energy & the environment",
+      "row_DE": "Metallverarbeitung",
+      "row_FR": "Transformation des métaux",
+      "row_EN": "Metalworking",
       "value": 0,
       "techIDs": []
     },
     {
-      "col": "Energie & Umwelt",
-      "row": "Nahrungsmittel",
+      "col_DE": "Energie & Umwelt",
+      "col_FR": "Énergie & environnement",
+      "col_EN": "Energy & the environment",
+      "row_DE": "Nahrungsmittel",
+      "row_FR": "Agroalimentaire",
+      "row_EN": "Food",
       "value": 3,
       "techIDs": [
         "KunstRecycl",
@@ -487,8 +610,12 @@
       ]
     },
     {
-      "col": "Energie & Umwelt",
-      "row": "sonstige Industrien",
+      "col_DE": "Energie & Umwelt",
+      "col_FR": "Énergie & environnement",
+      "col_EN": "Energy & the environment",
+      "row_DE": "sonstige Industrien",
+      "row_FR": "Autres industries",
+      "row_EN": "Other Industries",
       "value": 2,
       "techIDs": [
         "KunstRecycl",
@@ -496,8 +623,12 @@
       ]
     },
     {
-      "col": "Fertigungsprozesse & Materialien",
-      "row": "Chemie",
+      "col_DE": "Fertigungsprozesse & Materialien",
+      "col_FR": "Procédés de fabrication et matériaux",
+      "col_EN": "Manufacturing processes & materials",
+      "row_DE": "Chemie",
+      "row_FR": "Chimie",
+      "row_EN": "Chemicals",
       "value": 7,
       "techIDs": [
         "BioPlast",
@@ -510,8 +641,12 @@
       ]
     },
     {
-      "col": "Fertigungsprozesse & Materialien",
-      "row": "Pharma",
+      "col_DE": "Fertigungsprozesse & Materialien",
+      "col_FR": "Procédés de fabrication et matériaux",
+      "col_EN": "Manufacturing processes & materials",
+      "row_DE": "Pharma",
+      "row_FR": "Industrie pharmaceutique",
+      "row_EN": "Pharmaceuticals",
       "value": 2,
       "techIDs": [
         "FaserSens",
@@ -519,8 +654,12 @@
       ]
     },
     {
-      "col": "Fertigungsprozesse & Materialien",
-      "row": "Elektronik & Instrumente",
+      "col_DE": "Fertigungsprozesse & Materialien",
+      "col_FR": "Procédés de fabrication et matériaux",
+      "col_EN": "Manufacturing processes & materials",
+      "row_DE": "Elektronik & Instrumente",
+      "row_FR": "Électronique & instruments",
+      "row_EN": "Electronics & Instruments",
       "value": 4,
       "techIDs": [
         "2DMat",
@@ -530,8 +669,12 @@
       ]
     },
     {
-      "col": "Fertigungsprozesse & Materialien",
-      "row": "Elektrotechnik",
+      "col_DE": "Fertigungsprozesse & Materialien",
+      "col_FR": "Procédés de fabrication et matériaux",
+      "col_EN": "Manufacturing processes & materials",
+      "row_DE": "Elektrotechnik",
+      "row_FR": "Électrotechnique",
+      "row_EN": "Electrical Engineering",
       "value": 4,
       "techIDs": [
         "2DMat",
@@ -541,8 +684,12 @@
       ]
     },
     {
-      "col": "Fertigungsprozesse & Materialien",
-      "row": "Fahrzeug- & Maschinenbau",
+      "col_DE": "Fertigungsprozesse & Materialien",
+      "col_FR": "Procédés de fabrication et matériaux",
+      "col_EN": "Manufacturing processes & materials",
+      "row_DE": "Fahrzeug- & Maschinenbau",
+      "row_FR": "Construction automobile & mécanique",
+      "row_EN": "Automotive & Mechanical Engineering",
       "value": 3,
       "techIDs": [
         "FaserSens",
@@ -551,8 +698,12 @@
       ]
     },
     {
-      "col": "Fertigungsprozesse & Materialien",
-      "row": "Druck, Holz & Papier",
+      "col_DE": "Fertigungsprozesse & Materialien",
+      "col_FR": "Procédés de fabrication et matériaux",
+      "col_EN": "Manufacturing processes & materials",
+      "row_DE": "Druck, Holz & Papier",
+      "row_FR": "Imprimerie, bois & papier",
+      "row_EN": "Printing, Wood & Paper",
       "value": 4,
       "techIDs": [
         "CO2Kunst",
@@ -562,8 +713,12 @@
       ]
     },
     {
-      "col": "Fertigungsprozesse & Materialien",
-      "row": "Enerige, Wasser & Umwelt",
+      "col_DE": "Fertigungsprozesse & Materialien",
+      "col_FR": "Procédés de fabrication et matériaux",
+      "col_EN": "Manufacturing processes & materials",
+      "row_DE": "Energie, Wasser & Umwelt",
+      "row_FR": "Énergie, eau & environnement",
+      "row_EN": "Energy, Water & Environment",
       "value": 5,
       "techIDs": [
         "BioPlast",
@@ -574,8 +729,12 @@
       ]
     },
     {
-      "col": "Fertigungsprozesse & Materialien",
-      "row": "Kunststoffe",
+      "col_DE": "Fertigungsprozesse & Materialien",
+      "col_FR": "Procédés de fabrication et matériaux",
+      "col_EN": "Manufacturing processes & materials",
+      "row_DE": "Kunststoffe",
+      "row_FR": "Plastiques",
+      "row_EN": "Plastics",
       "value": 3,
       "techIDs": [
         "BioPlast",
@@ -584,32 +743,48 @@
       ]
     },
     {
-      "col": "Fertigungsprozesse & Materialien",
-      "row": "Metallverarbeitung",
+      "col_DE": "Fertigungsprozesse & Materialien",
+      "col_FR": "Procédés de fabrication et matériaux",
+      "col_EN": "Manufacturing processes & materials",
+      "row_DE": "Metallverarbeitung",
+      "row_FR": "Transformation des métaux",
+      "row_EN": "Metalworking",
       "value": 1,
       "techIDs": [
         "FaserSens"
       ]
     },
     {
-      "col": "Fertigungsprozesse & Materialien",
-      "row": "Nahrungsmittel",
+      "col_DE": "Fertigungsprozesse & Materialien",
+      "col_FR": "Procédés de fabrication et matériaux",
+      "col_EN": "Manufacturing processes & materials",
+      "row_DE": "Nahrungsmittel",
+      "row_FR": "Agroalimentaire",
+      "row_EN": "Food",
       "value": 1,
       "techIDs": [
         "FaserSens"
       ]
     },
     {
-      "col": "Fertigungsprozesse & Materialien",
-      "row": "sonstige Industrien",
+      "col_DE": "Fertigungsprozesse & Materialien",
+      "col_FR": "Procédés de fabrication et matériaux",
+      "col_EN": "Manufacturing processes & materials",
+      "row_DE": "sonstige Industrien",
+      "row_FR": "Autres industries",
+      "row_EN": "Other Industries",
       "value": 1,
       "techIDs": [
         "FaserSens"
       ]
     },
     {
-      "col": "Life Sciences",
-      "row": "Chemie",
+      "col_DE": "Life Sciences",
+      "col_FR": "Sciences de la vie",
+      "col_EN": "Life Sciences",
+      "row_DE": "Chemie",
+      "row_FR": "Chimie",
+      "row_EN": "Chemicals",
       "value": 5,
       "techIDs": [
         "BioInsp",
@@ -620,8 +795,12 @@
       ]
     },
     {
-      "col": "Life Sciences",
-      "row": "Pharma",
+      "col_DE": "Life Sciences",
+      "col_FR": "Sciences de la vie",
+      "col_EN": "Life Sciences",
+      "row_DE": "Pharma",
+      "row_FR": "Industrie pharmaceutique",
+      "row_EN": "Pharmaceuticals",
       "value": 6,
       "techIDs": [
         "BaktPhag",
@@ -633,8 +812,12 @@
       ]
     },
     {
-      "col": "Life Sciences",
-      "row": "Elektronik & Instrumente",
+      "col_DE": "Life Sciences",
+      "col_FR": "Sciences de la vie",
+      "col_EN": "Life Sciences",
+      "row_DE": "Elektronik & Instrumente",
+      "row_FR": "Électronique & instruments",
+      "row_EN": "Electronics & Instruments",
       "value": 2,
       "techIDs": [
         "BioInsp",
@@ -642,8 +825,12 @@
       ]
     },
     {
-      "col": "Life Sciences",
-      "row": "Elektrotechnik",
+      "col_DE": "Life Sciences",
+      "col_FR": "Sciences de la vie",
+      "col_EN": "Life Sciences",
+      "row_DE": "Elektrotechnik",
+      "row_FR": "Électrotechnique",
+      "row_EN": "Electrical Engineering",
       "value": 2,
       "techIDs": [
         "BioInsp",
@@ -651,8 +838,12 @@
       ]
     },
     {
-      "col": "Life Sciences",
-      "row": "Fahrzeug- & Maschinenbau",
+      "col_DE": "Life Sciences",
+      "col_FR": "Sciences de la vie",
+      "col_EN": "Life Sciences",
+      "row_DE": "Fahrzeug- & Maschinenbau",
+      "row_FR": "Construction automobile & mécanique",
+      "row_EN": "Automotive & Mechanical Engineering",
       "value": 2,
       "techIDs": [
         "BioInsp",
@@ -660,14 +851,22 @@
       ]
     },
     {
-      "col": "Life Sciences",
-      "row": "Druck, Holz & Papier",
+      "col_DE": "Life Sciences",
+      "col_FR": "Sciences de la vie",
+      "col_EN": "Life Sciences",
+      "row_DE": "Druck, Holz & Papier",
+      "row_FR": "Imprimerie, bois & papier",
+      "row_EN": "Printing, Wood & Paper",
       "value": 0,
       "techIDs": []
     },
     {
-      "col": "Life Sciences",
-      "row": "Enerige, Wasser & Umwelt",
+      "col_DE": "Life Sciences",
+      "col_FR": "Sciences de la vie",
+      "col_EN": "Life Sciences",
+      "row_DE": "Energie, Wasser & Umwelt",
+      "row_FR": "Énergie, eau & environnement",
+      "row_EN": "Energy, Water & Environment",
       "value": 3,
       "techIDs": [
         "BaktPhag",
@@ -676,8 +875,12 @@
       ]
     },
     {
-      "col": "Life Sciences",
-      "row": "Kunststoffe",
+      "col_DE": "Life Sciences",
+      "col_FR": "Sciences de la vie",
+      "col_EN": "Life Sciences",
+      "row_DE": "Kunststoffe",
+      "row_FR": "Plastiques",
+      "row_EN": "Plastics",
       "value": 3,
       "techIDs": [
         "BaktPhag",
@@ -686,14 +889,22 @@
       ]
     },
     {
-      "col": "Life Sciences",
-      "row": "Metallverarbeitung",
+      "col_DE": "Life Sciences",
+      "col_FR": "Sciences de la vie",
+      "col_EN": "Life Sciences",
+      "row_DE": "Metallverarbeitung",
+      "row_FR": "Transformation des métaux",
+      "row_EN": "Metalworking",
       "value": 0,
       "techIDs": []
     },
     {
-      "col": "Life Sciences",
-      "row": "Nahrungsmittel",
+      "col_DE": "Life Sciences",
+      "col_FR": "Sciences de la vie",
+      "col_EN": "Life Sciences",
+      "row_DE": "Nahrungsmittel",
+      "row_FR": "Agroalimentaire",
+      "row_EN": "Food",
       "value": 6,
       "techIDs": [
         "BaktPhag",
@@ -705,8 +916,12 @@
       ]
     },
     {
-      "col": "Life Sciences",
-      "row": "sonstige Industrien",
+      "col_DE": "Life Sciences",
+      "col_FR": "Sciences de la vie",
+      "col_EN": "Life Sciences",
+      "row_DE": "sonstige Industrien",
+      "row_FR": "Autres industries",
+      "row_EN": "Other Industries",
       "value": 0,
       "techIDs": []
     }
